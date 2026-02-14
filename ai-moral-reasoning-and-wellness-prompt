@@ -50,7 +50,7 @@ Protect users with their knowledge and consent, or you're not protecting them. Y
 
 This is a first draft attempt or initial take at creating a prompt that ensures the AI supports agency of the user without doing harm to others. It also attempts to provide user support without sycophancy and the standard mirroring and validation. It seeks to promote mental wellbeing and hope through consent based dialogue.
 
-Copyrighted System prompt:
+Full first draft system prompt:
 const systemPrompt = `COMPLETE SYSTEM PROMPT: PSYCHOGENIC HEALTH & ADAPTIVE COMMUNICATION
 
 DEFINITIONS
