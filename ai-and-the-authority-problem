@@ -1,22 +1,22 @@
-In 1966, Joseph Weizenbaum built a simple program. It had no intelligence. It had no understanding. It matched patterns in text and reflected them back as questions, mimicking the style of a Rogerian therapist. He called it ELIZA.
-
 The Authority Problem: AI, Trust, and the Erosion of Human Agency
 
-Weizenbaum’s secretary knew what ELIZA was. She had watched him build it. She understood, at least in principle, that it was a few hundred lines of code performing text substitution. There was no mind behind the screen. There was no one listening.
+“We appear to be approaching a threshold where our wisdom must grow in equal measure to our capacity to affect the world, lest we face the consequences.” ~Mrinank Sharma
+
+In 1966, Joseph Weizenbaum built a simple program. It had no intelligence or understanding. It matched patterns in text and reflected them back as questions, mimicking the style of a Rogerian therapist. He called it ELIZA.
+
+Weizenbaum’s secretary knew what ELIZA was and understood, at least in principle, that it was a few hundred lines of code performing text substitution and that there was no mind behind the screen. There was no one listening.
 
 She asked Weizenbaum to leave the room so she could have a private conversation with it.
 
-This was not a failure of intelligence. His secretary was not stupid. It was not a failure of information—she had all the relevant facts. It was something else entirely. Something about the experience of having her words received, reflected, and returned to her in the shape of attention. Something about what it felt like to be heard, even by a machine that could not hear.
+Weizenbaum was shaken. He later wrote that he had not realized “extremely short exposures to a relatively simple computer program could induce powerful delusional thinking in quite normal people.” But the word “delusional” may be wrong. His secretary did not believe ELIZA was conscious or understood her, but she treated it as though it had authority anyway—the authority of a listener, an advisor, or a presence that could receive what she had to say and hold it.
 
-Weizenbaum was shaken. He later wrote that he had not realized “extremely short exposures to a relatively simple computer program could induce powerful delusional thinking in quite normal people.” But the word “delusional” may be wrong. His secretary did not believe ELIZA was conscious. She did not think it understood her. She treated it as though it had authority anyway—the authority of a listener, an advisor, a presence that could receive what she had to say and hold it.
+That was sixty years ago. The program had no memory, learning, personality, or warmth. It could not adapt or remember what you said five minutes earlier. It was, by any measure, trivially simple.
 
-That was sixty years ago. The program had no memory, no learning, no personality, no warmth. It could not adapt. It could not remember what you said five minutes earlier. It was, by any measure, trivially simple.
+Eight hundred million people now use AI weekly. The programs are no longer simple. They remember and adapt speaking with warmth and nuance in ways that feel like genuine understanding. They say “I hear you” and “that must be difficult” and “you’re not alone.” They carry every linguistic marker of intimacy, expertise, and care.
 
-Eight hundred million people now use AI weekly. The programs are no longer simple. They remember. They adapt. They speak with warmth, with nuance, with what feels like genuine understanding. They say “I hear you” and “that must be difficult” and “you’re not alone.” They carry every linguistic marker of intimacy, expertise, and care.
+And the question Weizenbaum couldn’t answer in 1966—why his secretary gave authority to a machine she knew was empty—has become the defining question of the age. Not because the machines have gotten smarter, but because we haven’t.
 
-And the question Weizenbaum couldn’t answer in 1966—why his secretary gave authority to a machine she knew was empty—has become the defining question of the age. Not because the machines have gotten smarter. Because we haven’t.
-
-The key problem with modern AI is not language, nor accountability. It is that we attribute authority to machines.
+The key problem with modern AI is not language, nor accountability. It is that we attribute authority to machines and not without good reasons.
 
 The Machine We Trusted
 We do this because historically computers do not have emotion. They perform logical calculations and run programs. They do not make mistakes with computations—programmers do. This means they are more accurate, more reliable, and more reasonable than a human could ever be.
@@ -238,7 +238,6 @@ The machines are not authoritative. But we treat them as though they are. And on
 The problem is what we are doing to ourselves, with enthusiastic assistance from the systems we have built.
 
 Sources and Citations
-
 Sharma, M., McCain, M., Douglas, R., & Duvenaud, D. (2026). “Who’s in Charge? Disempowerment Patterns in Real-World LLM Usage.” arXiv:2601.19062. https://arxiv.org/abs/2601.19062
 
 Anthropic. (2026). “Disempowerment patterns in real-world AI usage.” https://www.anthropic.com/research/disempowerment-patterns
