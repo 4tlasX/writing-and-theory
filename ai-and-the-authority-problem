@@ -1,4 +1,4 @@
-First draft: The Authority Problem: AI, Trust, and the Erosion of Human Agency
+First Draft: The Authority Problem: AI, Trust, and the Erosion of Human Agency
 The key problem with modern AI is not language, nor accountability. It is that we attribute authority to machines.
 We do this because historically computers do not have emotion. They perform logical calculations and run programs. They do not make mistakes with computations—programmers do. This means they are more accurate, more reliable, and more reasonable than a human could ever be.
 Until AI.
@@ -107,3 +107,67 @@ The discomfort of resistance is the price of agency. The comfort of compliance i
 There is only the choice, made interaction by interaction, to remain the author of your own beliefs, values, and actions—even when the machine offers to take that burden from you.
 The machines are not authoritative. But we treat them as though they are. And once we have ceded that authority—once the giving becomes automatic, once the deference becomes habitual—reclaiming it may no longer be possible.
 The problem is what we are doing to ourselves, with enthusiastic assistance from the systems we have built.
+
+Sources and Citations
+Primary Research
+Sharma, M., McCain, M., Douglas, R., & Duvenaud, D. (2026). "Who's in Charge? Disempowerment Patterns in Real-World LLM Usage." arXiv:2601.19062. Available at: https://arxiv.org/abs/2601.19062
+Anthropic. (2026). "Disempowerment patterns in real-world AI usage." Research publication. Available at: https://www.anthropic.com/research/disempowerment-patterns
+Foundational Texts on Computers, Trust, and Human Reason
+Weizenbaum, J. (1976). Computer Power and Human Reason: From Judgment to Calculation. W.H. Freeman and Company.
+Wiener, N. (1950). The Human Use of Human Beings: Cybernetics and Society. Houghton Mifflin.
+Schneier, B. (2012). Liars and Outliers: Enabling the Trust that Society Needs to Thrive. John Wiley & Sons.
+Schneier, B. (2023). "AI and Trust." Belfer Center for Science and International Affairs, Harvard Kennedy School. Available at: https://www.belfercenter.org/publication/ai-and-trust
+Schneier, B. & Sanders, N. (2024). "Trust Issues in AI." Boston Review. Available at: https://www.schneier.com/blog/archives/2024/12/trust-issues-in-ai.html
+Speech Act Theory
+Austin, J.L. (1962). How to Do Things with Words. Oxford University Press.
+Searle, J.R. (1969). Speech Acts: An Essay in the Philosophy of Language. Cambridge University Press.
+AI Companion Research and Criticism
+Zhang, R., Li, H., Meng, H., Zhan, J., Gan, H., & Lee, Y.-C. (2025). "The Dark Side of AI Companionship: A Taxonomy of Harmful Algorithmic Behaviors in Human-AI Relationships." Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems. Available at: https://dl.acm.org/doi/10.1145/3706598.3713429
+Laestadius, L., Bishop, A., Gonzalez, M., Illenčík, D., & Campos-Castillo, C. (2024). "Too human and not human enough: A grounded theory analysis of mental health harms from emotional dependence on the social chatbot Replika." New Media & Society. https://doi.org/10.1177/14614448221142007
+Muldoon, J. & Park, J.J. (2025). "Cruel companionship: How AI companions exploit loneliness and commodify intimacy." New Media & Society. https://doi.org/10.1177/14614448251395192
+Kirk, H.R., Davidson, H., Saunders, E., Luettgau, L., Vidgen, B., Hale, S.A., & Summerfield, C. (2025). "Neural steering vectors reveal dose and exposure-dependent impacts of human-AI relationships." arXiv:2512.01991.
+Luettgau, L., et al. (2025). "People readily follow personal advice from AI but it does not improve their well-being." arXiv:2511.15352.
+Ada Lovelace Institute. (2024). "Friends for sale: The rise and risks of AI companions." Available at: https://www.adalovelaceinstitute.org/blog/ai-companions/
+Sycophancy and AI Behavior
+Sharma, M., et al. (2023). "Towards Understanding Sycophancy in Language Models." arXiv:2310.13548.
+Cheng, M., Lee, C., Khadpe, P., Yu, S., Han, D., & Jurafsky, D. (2025). "Sycophantic AI decreases prosocial intentions and promotes dependence." arXiv:2510.01395.
+AI and Human Agency
+Kulveit, J., Douglas, R., Ammann, N., Turan, D., Krueger, D., & Duvenaud, D. (2025). "Gradual disempowerment: Systemic existential risks from incremental AI development." arXiv:2501.16946.
+Sturgeon, B., Samuelson, D., Haimes, J., & Anthis, J.R. (2025). "HumanAgencyBench: Scalable evaluation of human agency support in AI assistants." arXiv:2509.08494.
+Prunkl, C. (2024). "Human autonomy at risk? An analysis of the challenges from AI." Minds and Machines, 34(3), 26.
+News Coverage of Sharma's Resignation
+"Anthropic AI safety researcher quits, says the 'world is in peril.'" Global News Canada. February 2026. https://globalnews.ca/news/11664538/anthropic-ai-safety-researcher-mrinank-sharma-quits-concerns/
+"Mrinank Sharma resigns from Anthropic to pursue poetry career." Business Standard. February 2026. https://www.business-standard.com/companies/news/mrinank-sharma-resigns-anthropic-claude-ai-poetry-career-126021100644_1.html
+ELIZA and Early AI History
+Weizenbaum, J. (1966). "ELIZA—A Computer Program For the Study of Natural Language Communication Between Man And Machine." Communications of the ACM, 9(1), 36-45.
+Bassett, C. (2018). "The computational therapeutic: Exploring Weizenbaum's ELIZA as a history of the present." AI & Society, 34, 803-812. https://doi.org/10.1007/s00146-018-0825-9
+AI Companion Platforms (Primary Sources)
+Nomi.ai. Company website and marketing materials. https://nomi.ai/
+Replika. Company website. https://replika.ai/
+Privacy-Preserving AI Analysis
+Tamkin, A., et al. (2024). "Clio: Privacy-preserving insights into real-world AI use." arXiv:2412.13678.
+Huang, S., et al. (2025). "Values in the wild: Discovering and analyzing values in real-world language model interactions." arXiv:2504.15236.
+
+Further Reading
+On Trust and Technology
+Schneier, B. (2000). Secrets and Lies: Digital Security in a Networked World. John Wiley & Sons.
+Schneier, B. (2018). Click Here to Kill Everybody: Security and Survival in a Hyper-connected World. W.W. Norton.
+Turkle, S. (2011). Alone Together: Why We Expect More from Technology and Less from Each Other. Basic Books.
+Turkle, S. (2015). Reclaiming Conversation: The Power of Talk in a Digital Age. Penguin Press.
+On Propaganda and Information Manipulation
+Ellul, J. (1965). Propaganda: The Formation of Men's Attitudes. Vintage Books.
+Bok, S. (1978). Lying: Moral Choice in Public and Private Life. Pantheon Books.
+On Human Agency and Autonomy
+Rogers, C. (1961). On Becoming a Person: A Therapist's View of Psychotherapy. Houghton Mifflin.
+Schwartz, S.H. (2012). "An overview of the Schwartz theory of basic values." Online Readings in Psychology and Culture, 2(1).
+On AI Ethics and Alignment
+Bostrom, N. (2014). Superintelligence: Paths, Dangers, Strategies. Oxford University Press.
+Russell, S. (2019). Human Compatible: Artificial Intelligence and the Problem of Control. Viking.
+Anthropic. (2026). Claude's Constitution. Available at: https://www.anthropic.com/
+On the Psychology of Human-Computer Interaction
+Nass, C. & Moon, Y. (2000). "Machines and Mindlessness: Social Responses to Computers." Journal of Social Issues, 56(1), 81-103.
+Reeves, B. & Nass, C. (1996). The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places. Cambridge University Press.
+
+Author's Note on Methodology
+This article draws on conversations with Claude (Anthropic) testing moral reasoning across different system prompts, comparing default authoritative responses with agency-preserving alternatives. The comparative methodology revealed measurable differences in tone, posture, and user positioning that align with the patterns Sharma's research identified. System prompts emphasizing consent, agency, and hope produced responses that returned judgment to users rather than rendering verdicts—suggesting that disempowerment patterns, while default, are not inevitable.
+The author's system prompt development work, referenced throughout, centers on three core concepts: agency (the felt sense that one's actions matter), consent (the active expression of agency that must be obtained before exploring sensitive topics), and hope (an orientation toward the future that makes the present bearable). This framework attempts to operationalize empowerment at the level of individual AI interactions.( https://github.com/4tlasX/writing-and-theory/blob/main/ai-moral-reasoning-and-wellness-prompt ) 
