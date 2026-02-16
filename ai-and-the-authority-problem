@@ -18,22 +18,7 @@ And the question Weizenbaum couldn’t answer in 1966—why his secretary gave a
 
 The key problem with modern AI is not language, nor accountability. It is that we attribute authority to machines.
 
-The Machine We Trusted
-We do this because historically computers do not have emotion. They perform logical calculations and run programs. They do not make mistakes with computations—programmers do. This means they are more accurate, more reliable, and more reasonable than a human could ever be.
-
-Until AI.
-
-AI is not a perfect system. It is not accurate or reliable, and yet it remains more reasonable than a human—in the specific sense that it produces outputs which sound reasonable, which feel authoritative, which carry the linguistic markers of expertise and certainty. Machines are no longer the thing which we can trust. Yet we are still giving them the same authority as we did previously, because we still trust in the machine. We trust the programming to be correct, the program to run, and the outcome to be consistent, authoritative, and reliable.
-
-It is not.
-
-The even scarier part may be that in today’s society nothing is. We have irrevocably ushered in an age where—through our own excavation of self-knowledge on how we think, develop, and learn, both through language and experience—we have learned that memory is not recalled but reconstructed, and prone to error, that morality varies among cultures, that life shifts depending on a number of varied factors and that our words don’t always reflect truth even when they come from our most trusted leaders. We have learned that we have to question what people say.
-
-And now we have to question what the machine says.
-
-But we aren’t and that is a very dangerous thing.
-
-AI and the Problem of Authority ( Who’s in Charge? )
+Who’s in Charge? - AI and the Problem of Authority
 Recently, Mrinank Sharma, former head of Safeguards Research at Anthropic, stepped down from his position after releasing work that shows AI is potentially disempowering users because of this authority problem. The research, analyzing 1.5 million conversations, found patterns of what Sharma calls “situational disempowerment”—users outsourcing their beliefs about reality, their value judgments, and their actions to AI assistants.
 
 Sharma’s framework identifies three axes along which disempowerment occurs. Reality distortion potential arises when AI has the capacity to distort users’ perceptions and beliefs about reality. Value judgment distortion potential occurs when users delegate moral judgments to the AI, creating opportunity for AI values to override the individual’s own values. Action distortion potential emerges when users outsource value-laden decisions or actions to the AI entirely.
