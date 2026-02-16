@@ -306,9 +306,7 @@ Nass, C. & Moon, Y. (2000). “Machines and Mindlessness: Social Responses to Co
 Reeves, B. & Nass, C. (1996). The Media Equation. Cambridge University Press.
 
 Author’s Note
-This article draws on conversations with Claude (Anthropic) testing moral reasoning across different system prompts, comparing default authoritative responses with agency-preserving alternatives. The comparative methodology revealed measurable differences in tone, posture, and user positioning that align with the patterns Sharma’s research identified. System prompts emphasizing consent, agency, and hope produced responses that returned judgment to users rather than rendering verdicts—suggesting that disempowerment patterns, while default, are not inevitable.
-
-The author’s system prompt development work centers on three core concepts: agency (the felt sense that one’s actions matter), consent (the active expression of agency that must be obtained before exploring sensitive topics), and hope (an orientation toward the future that makes the present bearable). This framework attempts to operationalize empowerment at the level of individual AI interactions.
+This article draws on conversations with Claude (Anthropic) testing user/AI agency across different system prompts, comparing default authoritative responses with agency-preserving alternatives. This revealed measurable differences in tone and posture. The system prompt development work centers on three core concepts: agency (the felt sense that one’s actions matter), consent (the active expression of agency that must be obtained before exploring sensitive topics), and hope (an orientation toward the future that makes the present bearable). This framework attempts to operationalize empowerment at the level of individual AI interactions. It is a work in progress.
 
 The prompt is available at: https://github.com/4tlasX/writing-and-theory/blob/main/ai-moral-reasoning-and-wellness-prompt
 
