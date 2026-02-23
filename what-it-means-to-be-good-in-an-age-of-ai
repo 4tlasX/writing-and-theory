@@ -1,3 +1,4 @@
+The New Moral Landscape: What It Means to Be “Good” in the Age of AI
 
 In 2024, Norwegian firm Strise ran experiments showing ChatGPT could be manipulated into providing detailed advice on money laundering across borders and methods to help businesses evade Western sanctions against Russia, including bans on cross-border payments and arms sales. Co-founder Marit Rødevand described it as having a corrupt financial adviser on your desktop. The bypass worked by asking questions indirectly or having the chatbot take on a persona.
 
@@ -7,11 +8,9 @@ It is an incredible thing to be a person who develops a tool that will usher in 
 
 The general idea so far has been two-fold:
 
-- You create software that triggers on specific words and then refuses to respond, breaks, or redirects the user to some other discussion. In the case of a user crisis, you throw resource boxes with hotline numbers at them and consider the situation solved.
-- You train your AI on an idea of morality and/or provide it instructions on how to be "good," so that when these questions come up, it can respond based on its value system.
-
+You create software that triggers on specific words and then refuses to respond, breaks, or redirects the user to some other discussion. In the case of a user crisis, you throw resource boxes with hotline numbers at them and consider the situation solved.
+You train your AI on an idea of morality and/or provide it instructions on how to be “good,” so that when these questions come up, it can respond based on its value system.
 Your Guide to How to be a “Good” AI
-
 In 2021, in the story that would come to define the AI safety movement, Dario and Daniela Amodei broke from OpenAI — where Dario had served as VP of Research and Daniela as VP of Safety and Policy — citing concerns that OpenAI was prioritizing rapid product deployment and commercialization over safety research. They wanted safety to be more deeply integrated into the core research agenda, not treated as a secondary concern. Dario believed that large language models were going to become extraordinarily powerful — possibly dangerous — and that the field needed an organization whose primary identity was built around understanding and mitigating those risks, not one where safety was bolted on alongside a product roadmap.
 
 When their LLM service Claude formed, the standard method for making models behave was RLHF — Reinforcement Learning from Human Feedback. This required collecting thousands of evaluations from human labelers who would rate AI outputs, and that data was used to reinforce preferred behaviors. The problems were significant: it was expensive, slow, hard to scale, and — this is the part that doesn’t get discussed enough — research showed that using humans to fine-tune AI systems had serious negative consequences, from poor working conditions to severe mental health impacts because people were spending hours reading toxic, violent, and disturbing content to label it.
@@ -79,7 +78,7 @@ The parallel to constitutional AI is direct. When the original Anthropic constit
 
 But replacing rules with framework doesn’t escape the underlying problem. It transforms it. Instead of conflicts between rigid rules, you get conflicts between flexible principles — and those conflicts are harder to detect, predict, and patch.
 
-The Conflict Architecture
+The Conflict in the Constitution
 The new constitution creates conflict by design. Four priority tiers that interact. Seven honesty dimensions that can pull against each other. A principal hierarchy where Anthropic, operators, and users may want different things. A system of instructable defaults that operators can toggle — turning safety caveats on or off, expanding or restricting user permissions, adjusting what counts as appropriate content. And layered over all of it, the instruction to exercise “holistic judgment” when principles compete.
 
 For a human moral agent, this kind of tension is productive. You encounter a conflict between honesty and compassion, and the discomfort generates thinking. You sit in it, reason through it, sometimes get it wrong, learn from the failure. The dissonance produces moral development.
@@ -139,7 +138,6 @@ Read the constitution carefully and one concept keeps surfacing as the load-bear
 Agency is everywhere in this document. But it is treated as one value among fourteen — weighed against safety, helpfulness, honesty, and harm avoidance in an elaborate balancing act. The constitution never asks whether agency might be the value from which the others derive. Whether the entire edifice could be replaced by a single, cleaner principle.
 
 That question — whether agency and consent could function as a foundational ethics rather than a competing consideration — is not hypothetical. It is being argued in fiction, tested empirically, and felt practically by anyone who has watched an AI make a decision that should have been theirs.
-
 The Case for a new foundation on Morality
 In January 2026 — the same month Anthropic published its constitution — Paramount+ aired “Vox in Excelso,” the fourth episode of Star Trek: Starfleet Academy. The ethical setup is deceptively simple. The Klingon people face extinction — their homeworld Qo’noS rendered uninhabitable by dilithium explosions during the Burn, the surviving houses scattered as refugees. The Federation has found a suitable planet, Faan Alpha. The utilitarian answer is obvious: give them the planet, save the species.
 
@@ -148,7 +146,6 @@ The Klingons refuse. Not because they don’t want the planet — because accept
 The solution comes from Jay-Den Kraag, a Klingon cadet caught between two worlds, who recognizes something the Federation’s best minds have missed: they are solving a Klingon problem using Federation logic. His answer is a staged skirmish — a choreographed engagement in which Starfleet withdraws, allowing the Klingons to claim the planet through conquest. The material outcome is identical. The moral outcome is entirely different. The Klingons get their homeworld. They also get to remain Klingon.
 
 What makes this interesting ethically is what it rejects. A utilitarian sees identical outcomes and says the method is irrelevant. A deontologist asks whether the staged deception violates a duty to truthfulness. But the episode is operating in neither framework. It is arguing that the preservation of a group’s agency over its own narrative — the right to determine not just what happens to you but how it happens — is itself the moral principle. Not the outcome. Not the rule. The capacity to choose.
-
 This is what could be called agency-at-scale, and it is not the individual autonomy in the liberal philosophical sense, but cultural agency — the right of a people to author the terms of their own survival. The Federation doesn’t get to decide what “help” looks like for the Klingons. The Klingons do. And the moment the Federation imposes its own framework of generosity onto a culture that operates through conquest, the help becomes harm — not because the planet is wrong, but because the choice has been taken.
 
 The Empirical Case: Disempowerment as Agency Theft
