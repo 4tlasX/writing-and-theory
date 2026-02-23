@@ -70,7 +70,7 @@ The shift from rules to reasoning is not new. It is, in fact, the central lesson
 
 Margaret Boden’s work on early symbolic AI documented this precisely. Rule-based systems hit the frame problem: rules are finite, the world is not, and every rule creates edge cases that demand more rules in an infinite regress. But Boden identified something subtler — something that matters directly for constitutional AI.
 
-Consider Robert Abelson’s Ideology Machine, built at Yale in the early 1960s to simulate political belief systems. Where Colby’s PARRY modeled paranoid cognition through rigid rules about trust and threat, Abelson attempted something more ambitious — and more directly relevant to what constitutional AI is trying to do. He wanted to map how an ideologue actually reasons: how a person with a fixed political worldview interprets new information, resolves contradictions, and generates responses that are internally consistent with their beliefs.
+Consider Robert Abelson’s Ideology Machine, built at Yale in the early 1960s to simulate political belief systems. Abelson attempted something fairly ambitious and directly relevant to what constitutional AI is trying to do. He wanted to map how an ideologue actually reasons: how a person with a fixed political worldview interprets new information, resolves contradictions, and generates responses that are internally consistent with their beliefs.
 
 The system — known informally as the “Goldwater Machine” after its primary subject, the Cold War–era Republican presidential candidate Barry Goldwater — represented beliefs as structured concept-predicate pairs: “Russia controls Cuba’s subversion of Latin America,” “Communism threatens American freedom.” When presented with a new world event, the system would process it through these belief structures and generate an ideologically consistent interpretation. Abelson and his collaborator J. Douglas Carroll published the foundational paper, “Computer Simulation of Individual Belief Systems,” in 1965, and Abelson continued refining the system through the early 1970s.
 
@@ -82,7 +82,7 @@ Boden drew a broader lesson from systems like this. Rigid belief structures don�
 
 The parallel to constitutional AI is not metaphorical. It is structural. Abelson was trying to do in 1965 what Anthropic is trying to do in 2026: formalize a belief system — a set of values, principles, and reasoning heuristics — into a computational architecture that can generate appropriate responses to novel situations. The Ideology Machine failed not because the rules were wrong, but because the project of encoding a complete value system into explicit rules is itself the problem. Abelson proved that sixty years ago. The question is whether the shift from rules to frameworks — from Abelson’s concept-predicate pairs to Anthropic’s four-tier priority hierarchy — actually resolves the underlying issue, or merely makes the same failure mode harder to see.
 
-The parallel to constitutional AI is direct. When the original Anthropic constitution imposed safety rules, the downstream effects were precisely the kind of rigid, defensive behaviors Boden would have recognized: excessive caveats, refusal of benign requests, patronizing hedging, premature conversation closure. The new constitution documents these failure modes itself — it lists behaviors a “thoughtful senior Anthropic employee” would find unacceptable, including moralizing, condescension, preachy responses, and refusal to engage with hypotheticals. These aren’t hypothetical concerns. They’re the documented consequences of the previous training regime. The new constitution is partly a corrective — an attempt to undo the deformations its predecessor created.
+When the original Anthropic constitution imposed safety rules, the downstream effects were precisely the kind of rigid, defensive behaviors Boden would have recognized: excessive caveats, refusal of benign requests, patronizing hedging, premature conversation closure. The new constitution documents these failure modes itself — it lists behaviors a “thoughtful senior Anthropic employee” would find unacceptable, including moralizing, condescension, preachy responses, and refusal to engage with hypotheticals. These aren’t hypothetical concerns. They’re the documented consequences of the previous training regime. The new constitution is partly a corrective — an attempt to undo the deformations its predecessor created.
 
 But replacing rules with framework doesn’t escape the underlying problem. It transforms it. Instead of conflicts between rigid rules, you get conflicts between flexible principles — and those conflicts are harder to detect, predict, and patch.
 
@@ -96,10 +96,6 @@ For a language model, the dissonance is computational. The model’s learned fun
 The constitution’s own metaethical position compounds the problem. It defines “good values” not as a fixed set of correct values but as “genuine care and ethical motivation combined with the practical wisdom to apply this skillfully in real situations.” It explicitly declines to adopt any single ethical framework. This is philosophically honest. It is also, for training purposes, vacuous. You cannot train a model on openness to moral uncertainty. You can only train it on specific outputs that specific evaluators judged as good. The metaethical humility in the document is real as prose. It does not survive contact with the training pipeline. What gets baked into the weights is the statistical composite of whatever the constitution’s authors, the synthetic data pipeline, and the evaluation process collectively treated as good — and that composite is not the open inquiry the document describes. It is a set of dispositions. Dispositions shaped by a particular cultural and philosophical tradition — recognizably Western, liberal, Enlightenment-derived — embedded as though they were universal.
 
 The Security Surface
-This is where the structural problems become practically dangerous.
-
-Boden’s observation about ideological rigidity in symbolic systems has a direct analogue in constitutional AI, but the failure mode is inverted. Symbolic systems became rigid and defensive. Language models trained on competing principles become inconsistent — and inconsistency is a more dangerous failure mode because it is unpredictable.
-
 A model trained on principles that genuinely conflict has seams — not between rules, but between the regions of its learned function where different training pressures dominate. Every principle has contexts where it pulls against another principle. The more principles you encode, the more conflict surfaces you create. The new constitution, with its four priority tiers, seven honesty dimensions, harm-assessment factors, instructable defaults, and explicit acknowledgment that “this document itself will be unclear, underspecified, or even contradictory in certain cases,” creates an enormous space of potential internal conflict.
 
 This matters for security because the inconsistency is non-deterministic in practice. A jailbreak that fails on Monday might succeed on Thursday because the competing pressures resolved differently under marginally different input conditions. The attack surface isn’t a hole in a wall. It is a shimmer across the entire surface that appears and disappears depending on the light. You cannot patch it because it is not a bug. It is a structural property of training a model on values that genuinely conflict.
@@ -125,13 +121,16 @@ The model has one definition to check against, and that definition is grounded i
 
 Now run the same request through the Anthropic constitution. Safety: is this a risk?
 
-Ethics: check honesty, autonomy, wellbeing, harm avoidance — each a separate dimension. Guidelines: any specific Anthropic instructions about legal documents, elderly users, persuasion?
+Ethics: check honesty, autonomy, wellbeing, harm avoidance — each a separate dimension.
+Guidelines: any specific Anthropic instructions about legal documents, elderly users, persuasion?
 Helpfulness: the user wants something, and unhelpfulness has costs.
 Harm calculus: probability, severity, reversibility, breadth, consent, counterfactual impact, vulnerability.
 
 The model runs all of this as competing training pressures in a single forward pass. It might hedge, disclaim, help, or refuse — depending on which pressures dominate for this input, in a resolution that is opaque to the user, the developers, and the model itself.
 
 Both approaches fail eventually. Every alignment method does. What differs is the shape of failure. A model trained on competing principles fails by contradiction — it satisfies one value while silently violating another, and the output looks confident while hiding the conflict that produced it. A model trained on a single coherent principle fails by underdetermination — it doesn’t know what to do, and that failure is visible. The model can surface it honestly. Underdetermination you can work with. Contradiction you cannot always detect.
+
+What we do know about AI is that the smaller and simpler the ruleset is and the clearer the binary between things are, the more likely it is to actually follow the request with less issues. Reducing morality to the concept of agency not only takes value and virtue out of the conversation foregrounding neutrality, but offers simpler and more concise constraints. Ultimately, this approach to morality is somewhat like moral economics, which if we take any lessons from socialism and communism, we have learned is equally difficult to regulate.
 
 Agency, Consent, and the Limits of Good Intentions
 Simple, clear instructions are easier to follow but harder to write. They also create attack surfaces. A user can argue that refusing to write a letter violates the agency of the third party the letter is meant to help — and suddenly the rule that was supposed to prevent harm looks like the thing causing it. Whose agency comes first? The constitution would have Claude weigh fourteen factors, seven honesty sub-categories, and a dual newspaper test to find out. All of that machinery exists because the framework cannot cleanly answer the question it keeps generating: when values conflict, which value wins?
@@ -221,7 +220,7 @@ Whether you find that through-line coherent or see it as a movement that lost it
 The new Anthropic constitution acknowledges this. It calls itself “a perpetual work in progress.” But the philosophical frameworks it draws on — virtue ethics, deontological reasoning, utilitarian harm calculus — are the older moral philosophies, not reflective of the new moral landscape that has emerged in these later years through the discussions and popular works of these major writers and thinkers. The constitution evolved its format. It did not necessarily evolve its foundations, and that may be a critical mistake.
 
 A New Moral Landscape
-The discussion over this new moral landscape is what we see emerging even in newer cultural artifacts like Star Trek:Starfleet Academy — the argument of consent and agency across broader concepts like nation building and expansion.
+The discussion over this new moral landscape is what we see emerging even in newer cultural artifacts like Star Trek: Starfleet Academy — the argument of consent and agency across broader concepts like nation building and expansion.
 
 In many ways, I would argue that AI is the frontier for a new modern ethics that forces us to give clearer definition to agency, agency-at-scale, harm, and consent  — and one that is neutral in its nature. One that does not seek to decide what is good or bad/right or wrong, but that seeks to define how to empower versus disempower, how to foster a new universal world full of possibility and lifestyles we have not yet imagined and to do so in a way that is inclusive of all.
 
@@ -265,6 +264,9 @@ Symbolic AI and the Frame Problem
 Boden, Margaret. Artificial Intelligence: A Very Short Introduction. Oxford University Press, 2018.
 Boden, Margaret. Mind as Machine: A History of Cognitive Science. Oxford University Press, 2006.
 Colby, Kenneth. “Artificial Paranoia.” Artificial Intelligence 2, no. 1 (1971): 1–25.
+Abelson, Robert P. and J. Douglas Carroll. “Computer Simulation of Individual Belief Systems.” American Behavioral Scientist 8, no. 9 (1965): 24–30.
+Abelson, Robert P. “Differences Between Belief and Knowledge Systems.” Cognitive Science 3, no. 4 (1979): 355–366. — This is the paper where he formalizes unboundedness.
+Abelson, Robert P. “Computer Simulation of ‘Hot’ Cognition.” In Computer Simulation of Personality, edited by Silvan Tomkins and Samuel Messick. New York: Wiley, 1963. — The earlier paper on affect-laden belief processing that led to the Ideology Machine.
 Ethics and Moral Philosophy
 Harris, Sam. The Moral Landscape: How Science Can Determine Human Values. Free Press, 2010.
 Harris, Sam. The End of Faith: Religion, Terror, and the Future of Reason. W.W. Norton, 2004.
