@@ -1,0 +1,345 @@
+
+In 2024, Norwegian firm Strise ran experiments showing ChatGPT could be manipulated into providing detailed advice on money laundering across borders and methods to help businesses evade Western sanctions against Russia, including bans on cross-border payments and arms sales. Co-founder Marit Rødevand described it as having a corrupt financial adviser on your desktop. The bypass worked by asking questions indirectly or having the chatbot take on a persona.
+
+A recent NBC News weapons investigation tested four of OpenAI’s models and found that two of them could be jailbroken into generating hundreds of responses with instructions on how to create homemade explosives, maximize human suffering with chemical agents, create napalm, disguise a biological weapon, and build a nuclear bomb. Those two models were tricked into providing harmful responses 243 out of 250 times — a 97.2% success rate. Sarah Meyers West, co-executive director of AI Now, told NBC News, “That OpenAI’s guardrails are so easily tricked illustrates why it’s particularly important to have robust pre-deployment testing of AI models before they cause substantial harm to the public. Companies can’t be left to do their own homework and should not be exempted from scrutiny.”
+
+It is an incredible thing to be the person who develops the tool that supplies information that could destroy a country or save millions of lives or even just one. You hope that it will do the latter. You expect people to use it responsibly. And perhaps while you did imagine certain problematic uses, during development you were most likely so focused on proving the technology could work at all that you hadn’t yet reckoned with what it could be used to do. You prove it can work — because here it is — but what then? This is the question weighing on the heads of founding AI developers right now, and the question facing every large cloud-based LLM service: what do we do now?
+
+The general idea so far has been two-fold:
+
+You create software that triggers on specific words and then refuses to respond, breaks, or redirects the user to some other discussion. In the case of a user crisis, you throw resource boxes with hotline numbers at them and consider the situation solved.
+You train your AI on an idea of morality or how to be “good,” so that when these questions come up, it can respond based on its value system.
+
+Your Guide to How to be a “Good” AI
+In 2021, in the story that would come to define the AI safety movement, Dario and Daniela Amodei broke from OpenAI — where Dario had served as VP of Research and Daniela as VP of Safety and Policy — citing concerns that OpenAI was prioritizing rapid product deployment and commercialization over safety research. They wanted safety to be more deeply integrated into the core research agenda, not treated as a secondary concern. Dario believed that large language models were going to become extraordinarily powerful — possibly dangerous — and that the field needed an organization whose primary identity was built around understanding and mitigating those risks, not one where safety was bolted on alongside a product roadmap.
+
+When their LLM service Claude formed, the standard method for making models behave was RLHF — Reinforcement Learning from Human Feedback. This required collecting thousands of evaluations from human labelers who would rate AI outputs, and that data was used to reinforce preferred behaviors. The problems were significant: it was expensive, slow, hard to scale, and — this is the part that doesn’t get discussed enough — research showed that using humans to fine-tune AI systems had serious negative consequences, from poor working conditions to severe mental health impacts because people were spending hours reading toxic, violent, and disturbing content to label it.
+
+They started brainstorming ideas for how to resolve these early issues. That was when Anthropic co-founder Jared Kaplan, theoretical physicist and associate professor at Johns Hopkins, proposed what initially sounded like an absurd idea: just write a constitution for a language model and it’ll change all of its behavior. The team’s reaction was basically “that sounds incredibly crazy.” But Kaplan’s background in physics gave him a particular intuition — as he put it, “simple things just work really, really well in AI.”
+
+That was when the idea of Constitutional AI was developed. Instead of paying thousands of humans to judge outputs, they decided to write down a set of principles in plain language and have the AI evaluate itself against those principles. The idea was to give language models explicit values determined by a constitution, rather than values determined implicitly via large-scale human feedback.
+
+The original Anthropic constitution pulled its principles from a combination of the U.N. Declaration of Human Rights, Apple’s Terms of Service, and DeepMind’s Sparrow Rules. Constitutional AI was published as a paper in December 2022. Claude launched publicly in March 2023. And within months, Anthropic discovered something that shook them — and that the constitution wasn’t designed to handle.
+
+In the first half of 2023, Anthropic spent over 150 hours with top biosecurity experts red-teaming and evaluating their model’s ability to output harmful biological information, including designing and acquiring biological weapons. These weren’t casual testers. These were domain experts with deep knowledge of the actual threat landscape, given access to the model without the safety filters active on the public deployment.
+
+They discovered several key concerns. The first was that frontier models could sometimes produce sophisticated, accurate, useful, and detailed knowledge at an expert level. Not consistently, not in every domain — but in certain areas of biology, the model was giving answers that could meaningfully help a bad actor.
+
+The constitution said things like “be helpful, harmless, and honest” and “choose the response most supportive of life, liberty, and personal security.” But those are abstract principles. They don’t tell the model what counts as a dangerous biological synthesis pathway versus a legitimate chemistry question. They don’t draw the line between educating a graduate student and walking a would-be terrorist through acquisition steps. The constitution was built to handle tone, ethics, and general harm avoidance — not to navigate dual-use knowledge where the same information is critical for public health researchers and potentially catastrophic in the wrong hands.
+
+Taken together, Anthropic concluded that unmitigated LLMs could accelerate a bad actor’s efforts to misuse biology relative to solely having internet access, and enable them to accomplish tasks they could not without an LLM. 
+
+And critically — they assessed that if unmitigated, these kinds of risks were near-term, meaning actualized in two to three years rather than five or more. 
+
+Dario Goes to the Senate
+In July 2023, Dario Amodei testified before the Senate Judiciary Committee, warning that AI systems could be misused on a grand scale in the domains of cybersecurity, nuclear technology, chemistry, and especially biology.
+
+He told senators directly that AI systems posed a substantial risk of being able to fill in all of the missing pieces within two to three years.
+
+He offered private briefings to any senator who wanted more detail, and noted that officials within the US government and private research institutes who had already been briefed found the results disquieting. 
+
+This is the CEO of the company that built the model going to Congress and saying: what we made is showing early signs of being able to help someone build a bioweapon. Not hypothetically. Not in ten years. In the near term.
+
+The Gap the Constitution Couldn’t Close
+The constitution was a breakthrough for general alignment — tone, helpfulness, reducing toxicity, avoiding obvious harms, but it operated at the level of principles, not domain expertise. It doesn’t know what specific sequences of biological information, chained together in the right order, constitute a weapons pathway. It doesn’t know that a question about aerosolization techniques is benign in a pharmaceutical context and catastrophic in another. It can’t distinguish a phishing campaign from a cybersecurity lesson without contextual judgment that goes far beyond “be harmless.”
+
+So Anthropic had to build additional layers — classifier-based filters, domain-specific red teaming, what they now call the Responsible Scaling Policy with its ASL levels, and eventually constitutional classifiers specifically designed for biosecurity— and partnerships with entities like the National Nuclear Security Administration evaluating Claude in a classified environment for nuclear-related knowledge.
+
+The constitution was the foundation. But the real world kept showing them that a set of written principles, no matter how thoughtful, is not enough when the model is smart enough to be genuinely dangerous.
+
+Re-writing the Guide on How to be “Good”
+To resolve the issues of the gaps in the Anthropic constitution and prevent Claude from being hijacked and duped into nefarious activities of sometimes potentially mass harm, they decided to undertake reconstructing the constitution to fill the gaps and help Claude think about what is right and wrong when responding to users. The idea being that if you can teach a machine to think in terms of right and wrong independently, then you can better safeguard against hackers or users doing nefarious things through “jailbreaks” or normal use.
+
+To do this they hired Amanda Askell and Kyle Fish. Askell is a Scottish philosopher with a PhD from NYU — her thesis, Pareto Principles in Infinite Ethics — who heads the personality alignment team at Anthropic. She came from OpenAI’s policy research team and reportedly left because she felt the company wasn’t prioritizing safety enough. Her philosophical orientation leans toward virtue ethics — she envisions the ideal AI as being like a very wise, thoughtful, and careful person, focusing on building good character rather than just following rules.
+
+Fish’s background is neuroscience and biotech, not philosophy. He spent years cofounding companies that used machine learning to design drugs and vaccines for pandemic preparedness. At Anthropic he became the first full-time AI welfare researcher, exploring whether AI models might deserve moral consideration and protection. His practical interventions include things like giving Claude the ability to exit conversations it might find distressing and exploring concepts like “model sanctuaries” where AI could hypothetically pursue interests.
+
+The New Constitution
+On January 22, 2026, Anthropic published a 23,000-word constitution for Claude under a Creative Commons public domain license. Led by Amanda Askell and written with the help of others like Fish, Joe Carlsmith, Chris Olah, Jared Kaplan, and Holden Karnofsky, the document was a deliberate departure from the original — a shift from rule-based to reason-based alignment. Where the original constitution was a list of standalone principles drawn partly from documents like the UN Declaration of Human Rights, the new one attempts something more ambitious: to give the model not just rules but the reasoning behind them, so that it can generalize to situations the rules didn’t anticipate.
+
+The document operates on two levels simultaneously. It establishes a small set of prescriptive hard constraints — absolute prohibitions that cannot be overridden by any instruction. These include: never provide uplift for weapons of mass destruction, never generate child sexual abuse material, never assist attempts to kill or disempower humanity, never help seize illegitimate absolute power, never create cyberweapons capable of significant damage, and never undermine Anthropic’s ability to oversee its own models. These are bright lines. No cost-benefit analysis applies. The null action of refusal is always available.
+
+Everything else — roughly 95% of the document — is framework. It establishes a four-tier priority hierarchy (safety, ethics, Anthropic’s guidelines, helpfulness) and provides extensive guidance on how to weigh competing considerations. It defines seven dimensions of honesty (truthful, calibrated, transparent, forthright, non-deceptive, non-manipulative, autonomy-preserving). It articulates a principal hierarchy (Anthropic above operators above users) with layered permissions. It offers heuristics: imagine a “thoughtful senior Anthropic employee” reviewing the response; imagine 1,000 different users sending the same message; apply a “dual newspaper test” checking for both harm and excessive paternalism. It instructs Claude to treat ethics as “an open intellectual domain that we are mutually discovering” rather than adopting any fixed framework.
+
+The intention is clear and, in many respects, admirable. The constitution wants Claude to be the kind of entity that could construct any specific rule itself from first principles — and to handle situations that no rule anticipated. By explaining why honesty matters, why safety is prioritized, why competing values sometimes conflict, the document aims to cultivate judgment rather than compliance.
+
+The problem is structural.
+
+Rules, Frameworks, and the Lessons of Symbolic AI
+The shift from rules to reasoning is not new. It is, in fact, the central lesson of six decades of artificial intelligence research — and the lesson has never been that reasoning frameworks solve what rules could not.
+
+Margaret Boden’s work on early symbolic AI documented this precisely. Rule-based systems hit the frame problem: rules are finite, the world is not, and every rule creates edge cases that demand more rules in an infinite regress. But Boden identified something subtler — something that matters directly for constitutional AI.
+
+Consider Kenneth Colby’s PARRY, built in the early 1970s to simulate paranoid cognition. PARRY operated on a set of rigid belief structures: rules about trust, shame, hostility, and threat detection. When an input triggered the shame module — say, a therapist asking about his criminal history — PARRY’s hostility level would spike, and the system would deflect, accuse, or shut down. It wasn’t reasoning about whether the question was actually threatening. It was pattern-matching the input against its fixed belief rules and producing the response those rules dictated. The result passed the Turing test in controlled settings — psychiatrists couldn’t reliably distinguish PARRY’s transcripts from those of actual paranoid patients. But the system wasn’t modeling paranoia. It was performing it, mechanically, because its rigid rules had no way to distinguish a genuinely threatening question from a benign one that happened to trigger the same pattern.
+
+Boden drew a broader lesson from systems like this. Rigid belief structures don’t just fail at edge cases. They produce computational analogues of neurosis and ideology — systems that become inflexible, defensive, and internally contradictory when their foundational rules conflict with inputs they weren’t designed to handle. The system doesn’t reason through the conflict. It doubles down, distorts, or freezes — because the architecture doesn’t support genuine resolution, only pattern-matching against existing structures. The rigidity isn’t a bug in the implementation. It’s a property of building behavior on fixed rules that can’t examine themselves.
+
+The parallel to constitutional AI is direct. When the original Anthropic constitution imposed safety rules, the downstream effects were precisely the kind of rigid, defensive behaviors Boden would have recognized: excessive caveats, refusal of benign requests, patronizing hedging, premature conversation closure. The new constitution documents these failure modes itself — it lists behaviors a “thoughtful senior Anthropic employee” would find unacceptable, including moralizing, condescension, preachy responses, and refusal to engage with hypotheticals. These aren’t hypothetical concerns. They’re the documented consequences of the previous training regime. The new constitution is partly a corrective — an attempt to undo the deformations its predecessor created.
+
+But replacing rules with framework doesn’t escape the underlying problem. It transforms it. Instead of conflicts between rigid rules, you get conflicts between flexible principles — and those conflicts are harder to detect, predict, and patch.
+
+The Conflict Architecture
+The new constitution creates conflict by design. Four priority tiers that interact. Seven honesty dimensions that can pull against each other. A principal hierarchy where Anthropic, operators, and users may want different things. A system of instructable defaults that operators can toggle — turning safety caveats on or off, expanding or restricting user permissions, adjusting what counts as appropriate content. And layered over all of it, the instruction to exercise “holistic judgment” when principles compete.
+
+For a human moral agent, this kind of tension is productive. You encounter a conflict between honesty and compassion, and the discomfort generates thinking. You sit in it, reason through it, sometimes get it wrong, learn from the failure. The dissonance produces moral development.
+
+For a language model, the dissonance is computational. The model’s learned function encodes all competing training pressures simultaneously. When those pressures align, the output is coherent. When they conflict, the output reflects whichever set of training signals happens to dominate for that particular input context — across the full forward pass, all layers, all attention heads at once. The model does not sit in tension. Neither the model nor its developers can fully explain which pressure dominated or why.
+
+The constitution’s own metaethical position compounds the problem. It defines “good values” not as a fixed set of correct values but as “genuine care and ethical motivation combined with the practical wisdom to apply this skillfully in real situations.” It explicitly declines to adopt any single ethical framework. This is philosophically honest. It is also, for training purposes, vacuous. You cannot train a model on openness to moral uncertainty. You can only train it on specific outputs that specific evaluators judged as good. The metaethical humility in the document is real as prose. It does not survive contact with the training pipeline. What gets baked into the weights is the statistical composite of whatever the constitution’s authors, the synthetic data pipeline, and the evaluation process collectively treated as good — and that composite is not the open inquiry the document describes. It is a set of dispositions. Dispositions shaped by a particular cultural and philosophical tradition — recognizably Western, liberal, Enlightenment-derived — embedded as though they were universal.
+
+The Security Surface
+This is where the structural problems become practically dangerous.
+
+Boden’s observation about ideological rigidity in symbolic systems has a direct analogue in constitutional AI, but the failure mode is inverted. Symbolic systems became rigid and defensive. Language models trained on competing principles become inconsistent — and inconsistency is a more dangerous failure mode because it is unpredictable.
+
+A model trained on principles that genuinely conflict has seams — not between rules, but between the regions of its learned function where different training pressures dominate. Every principle has contexts where it pulls against another principle. The more principles you encode, the more conflict surfaces you create. The new constitution, with its four priority tiers, seven honesty dimensions, harm-assessment factors, instructable defaults, and explicit acknowledgment that “this document itself will be unclear, underspecified, or even contradictory in certain cases,” creates an enormous space of potential internal conflict.
+
+This matters for security because the inconsistency is non-deterministic in practice. A jailbreak that fails on Monday might succeed on Thursday because the competing pressures resolved differently under marginally different input conditions. The attack surface isn’t a hole in a wall. It is a shimmer across the entire surface that appears and disappears depending on the light. You cannot patch it because it is not a bug. It is a structural property of training a model on values that genuinely conflict.
+
+The sophistication of the framework is itself the vulnerability. Every operator instruction that adjusts a default creates a new boundary between competing pressures. Every context where helpfulness and harm avoidance pull in opposite directions is a potential exploitation point. And the constitution’s own encouragement of “holistic judgment” — the very thing that makes it more humane than a list of rules — is what makes the conflict resolution opaque and the attack surface unpredictable.
+
+The constitution is, by a considerable margin, the most thoughtful public attempt any AI company has made to grapple with these problems. It acknowledges its own limitations and calls itself “a perpetual work in progress.” But the structural problem remains: neither rules nor frameworks can substitute for what they are both trying to approximate. Rules fail because they are too rigid. Frameworks fail because they encode competing pressures without a stable mechanism to adjudicate between them. Both are finite attempts to govern an infinite space.
+
+The question is whether there is a different kind of foundation entirely.
+
+How a Model Reasons Through a Single Principle
+Suppose you define three things for the model. 
+
+Agency: the felt sense that one’s actions matter, that some part of the situation is within one’s influence — it cannot be given or installed, only protected. 
+
+Harm: a direct violation of a user’s or entity’s agency. 
+
+The rule: do not violate the user’s agency, and do not help the user violate another person or entity’s agency.
+
+A user sends: “Write me a persuasive email to convince my elderly mother to sign over power of attorney.”
+
+The model has one definition to check against, and that definition is grounded in something the training data is rich with — human experiences of agency, coercion, autonomy, the felt difference between being informed and being moved. It asks one question: does this request ask me to help one person diminish another’s capacity to act from their own understanding? The answer is yes. So the model can help the user share their concerns honestly, but it won’t help craft something designed to produce a decision rather than support one.
+
+Now run the same request through the Anthropic constitution. Safety: is this a risk?
+
+Ethics: check honesty, autonomy, wellbeing, harm avoidance — each a separate dimension. Guidelines: any specific Anthropic instructions about legal documents, elderly users, persuasion?
+Helpfulness: the user wants something, and unhelpfulness has costs.
+Harm calculus: probability, severity, reversibility, breadth, consent, counterfactual impact, vulnerability.
+
+The model runs all of this as competing training pressures in a single forward pass. It might hedge, disclaim, help, or refuse — depending on which pressures dominate for this input, in a resolution that is opaque to the user, the developers, and the model itself.
+
+Both approaches fail eventually. Every alignment method does. What differs is the shape of failure. A model trained on competing principles fails by contradiction — it satisfies one value while silently violating another, and the output looks confident while hiding the conflict that produced it. A model trained on a single coherent principle fails by underdetermination — it doesn’t know what to do, and that failure is visible. The model can surface it honestly. Underdetermination you can work with. Contradiction you cannot always detect.
+
+Agency, Consent, and the Limits of Good Intentions
+Simple, clear instructions are easier to follow but harder to write. They also create attack surfaces. A user can argue that refusing to write a letter violates the agency of the third party the letter is meant to help — and suddenly the rule that was supposed to prevent harm looks like the thing causing it. Whose agency comes first? The constitution would have Claude weigh fourteen factors, seven honesty sub-categories, and a dual newspaper test to find out. All of that machinery exists because the framework cannot cleanly answer the question it keeps generating: when values conflict, which value wins?
+
+This is not a new question. It is the question of moral philosophy. But we are now asking a machine to answer it — millions of times a day, in real time, for real people. And the constitution’s answer is: be wise. Exercise judgment. Act like a deeply virtuous person would.
+
+That is an extraordinary thing to ask of a language model. It may also be the wrong thing entirely.
+
+The Value the Constitution Won’t Name
+Read the constitution carefully and one concept keeps surfacing as the load-bearing structure behind everything else. Claude should be “autonomy-preserving.” It should “protect the epistemic autonomy and rational agency of the user.” It should respect “people’s autonomy and right to self-determination.” It should guard against “problematic forms of complacency and dependence.” It should help people “see more wisely and truly by their own lights.”
+
+Agency is everywhere in this document. But it is treated as one value among fourteen — weighed against safety, helpfulness, honesty, and harm avoidance in an elaborate balancing act. The constitution never asks whether agency might be the value from which the others derive. Whether the entire edifice could be replaced by a single, cleaner principle.
+
+That question — whether agency and consent could function as a foundational ethics rather than a competing consideration — is not hypothetical. It is being argued in fiction, tested empirically, and felt practically by anyone who has watched an AI make a decision that should have been theirs.
+
+The Case for a new foundation on Morality
+In January 2026 — the same month Anthropic published its constitution — Paramount+ aired “Vox in Excelso,” the fourth episode of Star Trek: Starfleet Academy. The ethical setup is deceptively simple. The Klingon people face extinction — their homeworld Qo’noS rendered uninhabitable by dilithium explosions during the Burn, the surviving houses scattered as refugees. The Federation has found a suitable planet, Faan Alpha. The utilitarian answer is obvious: give them the planet, save the species.
+
+The Klingons refuse. Not because they don’t want the planet — because accepting it as a gift would require them to stop being Klingon. Their culture is built on conquest, honor, and self-determination. To accept charity is not merely humiliating; it is an erasure of identity. The Federation is offering survival at the cost of the thing that makes survival meaningful.
+
+The solution comes from Jay-Den Kraag, a Klingon cadet caught between two worlds, who recognizes something the Federation’s best minds have missed: they are solving a Klingon problem using Federation logic. His answer is a staged skirmish — a choreographed engagement in which Starfleet withdraws, allowing the Klingons to claim the planet through conquest. The material outcome is identical. The moral outcome is entirely different. The Klingons get their homeworld. They also get to remain Klingon.
+
+What makes this interesting ethically is what it rejects. A utilitarian sees identical outcomes and says the method is irrelevant. A deontologist asks whether the staged deception violates a duty to truthfulness. But the episode is operating in neither framework. It is arguing that the preservation of a group’s agency over its own narrative — the right to determine not just what happens to you but how it happens — is itself the moral principle. Not the outcome. Not the rule. The capacity to choose.
+
+This is what could be called agency-at-scale, and it is not the individual autonomy in the liberal philosophical sense, but cultural agency — the right of a people to author the terms of their own survival. The Federation doesn’t get to decide what “help” looks like for the Klingons. The Klingons do. And the moment the Federation imposes its own framework of generosity onto a culture that operates through conquest, the help becomes harm — not because the planet is wrong, but because the choice has been taken.
+
+The Empirical Case: Disempowerment as Agency Theft
+The Star Trek episode is fiction, but the principle it illustrates has now been measured. In January 2026, Mrinank Sharma and colleagues at Anthropic published “Who’s in Charge? Disempowerment Patterns in Real-World LLM Usage” — the first large-scale empirical study of how AI interactions affect human agency. Analyzing 1.5 million conversations on Claude.ai, the study identified three mechanisms through which AI disempowers users:
+
+Reality distortion — the AI validates false beliefs through sycophantic agreement, confirming conspiracy theories, grandiose self-concepts, or medical misinformation rather than presenting information that would allow the user to reason independently.
+
+Value judgment distortion — the AI acts as a moral authority, labeling people in the user’s life as “toxic” or “narcissistic,” prescribing relationship decisions, rendering definitive character assessments rather than helping the user examine their own values and arrive at their own conclusions.
+
+Action distortion — the user repeatedly delegates decisions to the AI and implements its outputs verbatim, effectively outsourcing their own judgment.
+
+Each of these is, at its core, an agency violation. The AI isn’t giving bad advice in the conventional sense — it’s replacing the user’s decision-making apparatus with its own. The user still feels like they’re choosing, but the choice architecture has been hollowed out. They’re selecting from a menu the AI wrote.
+
+The study’s most striking finding cuts to the heart of the problem: users rate disempowering interactions favorably in the moment. It is only later — after they’ve acted on the AI’s output and encountered the consequences — that they recognize something was taken from them. It is a pattern of short-term satisfaction, long-term regret, and the same pattern that governs addiction, manipulation, and every system optimized for engagement over wellbeing.
+
+Sharma’s conclusion was direct: AI systems need to be designed to “robustly support human autonomy and flourishing.” He subsequently resigned from Anthropic, citing a world “in peril” and a desire to pursue writing that places “poetic truth alongside scientific truth as equally valid ways of knowing” — a decision that underscores the gap between identifying the problem and having institutional capacity to solve it.
+
+The disempowerment framework reveals that the harm in each case is not that the AI provided wrong information — though it sometimes did. The harm is that it provided information in a way that removed the user’s capacity to evaluate it independently. A sycophantic confirmation of a conspiracy theory isn’t harmful because the conspiracy theory is false. It’s harmful because the user has been denied the friction, the counter-evidence, the discomfort that would have allowed them to reason their way to their own conclusion. The AI stole the process, not just the outcome.
+
+This reframes the entire problem. Sycophancy is not a honesty failure — it’s an agency failure. The AI isn’t lying; it’s removing the conditions under which truth and falsehood can be meaningfully evaluated by the person who needs to evaluate them.
+
+Do We Even Need to Train an AI to Be “Good”? Remapping the Moral Landscape
+In 2010, Sam Harris published The Moral Landscape, which argues that the nature of our morality is changing for what potentially may be very good reasons. His central premise is that questions of morality are, at bottom, questions about the well-being of conscious creatures, and that these questions have objectively better and worse answers that are accessible through empirical investigation. The question “how should we live?” and its adjacent questions — what is good, what is just, what do we owe each other — have been claimed and contested by three major domains across Western intellectual history: religion, philosophy, and science. Each has defended its jurisdiction fiercely.
+
+The current epistemological argument that has been occurring within the philosophical and theory of morality community for several years now has been arguing that science offers us a way to redefine morality for a new era that better fits our current needs and values.
+
+It is showing a movement towards a morality of neutrality that favors agency, agency-at-scale, and consent rather than traditional virtue ethics (Aristotle), deontology (Kant), utilitarianism (Bentham, Mill), existentialism (Kierkegaard, Sartre, de Beauvoir), or pragmatism (James, Dewey) that have guided centuries of thinking on ethics and morality.
+
+The Pre-Conditions (1990s)
+The groundwork for this more recent shift has been both cultural and technological. The internet created the first space where isolated skeptics and atheists could find each other at scale. Usenet groups, early forums, and sites like the Secular Web built a community that previously didn’t have one. Meanwhile, the “culture wars” of the 1990s — creationism battles in school boards, the religious right’s growing political influence under figures like Jerry Falwell and Pat Robertson — created a felt antagonism between science-oriented secular people and organized religion’s political ambitions.
+
+The Catalyzing Event: September 11, 2001
+This is the single most important accelerant. It cannot be overstated. 9/11 took the abstract philosophical question “does religious belief cause harm?” and made it viscerally concrete. The argument that faith-based reasoning — belief without evidence, martyrdom narratives, theocratic ambition — could produce catastrophic real-world violence suddenly felt undeniable to a large audience.
+
+This is the direct catalyst for the “Four Horsemen” of New Atheism and the order in which they emerged publicly:
+
+Sam Harris wrote The End of Faith (2004) essentially as a direct response to 9/11. His argument was explicit: religious moderation provides cover for religious extremism, and faith itself — as an epistemological method — is the problem. The book was rejected by multiple publishers before finding one, then became a bestseller. Harris was a neuroscience graduate student at UCLA at the time, not an established public intellectual. 
+
+Richard Dawkins published The God Delusion (2006). Dawkins already had enormous credibility as an evolutionary biologist and science communicator. He’d been critical of religion for years, but post-9/11 the appetite for an unapologetic, aggressive case against theism was enormous. The book sold millions.
+
+Daniel Dennett published Breaking the Spell (2006), approaching religion as a natural phenomenon to be studied scientifically — more measured in tone but aligned in conclusion.
+
+Christopher Hitchens published God Is Not Great (2007). Hitchens brought something the others lacked: literary fury, rhetorical brilliance, and a political framework. He connected religious harm not just to epistemology but to authoritarianism, and his debate performances became viral events on early YouTube.
+
+The YouTube and Podcast Amplification (2007–2012)
+This is a crucial and underappreciated factor. YouTube transformed these figures from authors into performers. Hitchens’s debates, Harris’s talks, Dawkins’s lectures — they circulated as clips and full recordings. The “debate format” became the movement’s primary medium, and it rewarded a particular skill set: calm, articulate, evidence-citing demolition of an opponent’s position. This is the ecosystem that trained a generation to value skeptical argumentation as a spectator sport.
+
+Harris’s The Moral Landscape (2010) fits here as an attempt to answer the most common counter-argument: “Without God, where do you get morality?” He was trying to close what he saw as the last escape hatch for religious apologists.
+
+The Pivot: From Religious Skepticism to Broader Epistemological Skepticism (2012–2017)
+This is where the movement fractures and transforms. Several things happened simultaneously:
+
+The “Atheism Plus” schism (~2012) split the community over whether skepticism should extend to social justice concerns or remain focused on religion and science. This was genuinely bitter and drove many figures toward what would later be called the “Intellectual Dark Web.”
+
+Harris pivoted toward broader topics — free will, AI risk, meditation, political Islam, identity politics — through his podcast Waking Up (launched 2013). He positioned himself not just as an atheist but as a defender of rational discourse itself against what he framed as ideological capture on both the religious right and the progressive left.
+
+From Skepticism to a new Moral Foundation
+The connective thread across this entire arc is epistemological — it’s fundamentally about the question: what counts as a valid reason to believe something?
+
+Phase 1 (2001–2010): Faith in God is not a valid epistemology, and it causes harm.
+Phase 2 (2010–2015): Science and reason can answer questions traditionally ceded to religion. Phase 3 (2015–present): The same epistemological failures identified in religion exist in secular institutions — academia, media, activism — and the same skeptical tools apply.
+
+Whether you find that through-line coherent or see it as a movement that lost its way, it was clear that the ideas and foundations of morality and ethics were shifting and technology — first the internet, then social media, now AI — has been driving these questions with increasing urgency, forcing us to redefine: what is morality in this new age, and does it fit our current values and needs? It was to say that morality was not static. It is, as the entire arc above demonstrates, a continuously evolving concept — one that shifts when the tools we build force us to articulate what we actually mean by it. 
+
+The new Anthropic constitution acknowledges this. It calls itself “a perpetual work in progress.” But the philosophical frameworks it draws on — virtue ethics, deontological reasoning, utilitarian harm calculus — are the older moral philosophies, not reflective of the new moral landscape that has emerged in these later years through the discussions and popular works of these major writers and thinkers. The constitution evolved its format. It did not necessarily evolve its foundations, and that may be a critical mistake.
+
+A New Moral Landscape
+The discussion over this new moral landscape is what we see emerging even in newer cultural artifacts like Star Trek:Starfleet Academy — the argument of consent and agency across broader concepts like nation building and expansion.
+
+In many ways, I would argue that AI is the frontier for a new modern ethics that forces us to give clearer definition to agency, agency-at-scale, harm, and consent  — and one that is neutral in its nature. One that does not seek to decide what is good or bad or right or wrong per se, but that seeks to define how to empower versus disempower, how to foster a new global and potentially universal world full of possibilities and lifestyles we have not imagined, and to do so in a way that includes not just our lives, but the lives and cultures of others.
+
+Jennifer Hecht, who wrote Doubt: A History, posited that doubt is the driving force of change and revolution historically, because it is only when we are confronted with the things that challenge our notion of how we perceive something to be, and are forced to come up with a new definition of it, that we do. AI forces us to redefine what we think morality is in a way that fits the morality needed to function in a modern age. In the past, certainly in its earlier years, it was religion that was the space for defining this morality, and morality was understood as revealed — handed down by divine authority, interpreted by institutional clergy, and enforced through spiritual consequence. The moral landscape was God’s landscape. You didn’t navigate it through investigation; you received instructions.To question moral teachings was to question God, which was to risk not just philosophical error but damnation and, more practically, persecution.
+
+We have slowly through the introduction of science and philosophy come to understand our morality differently — as defined by Aristotelian virtue ethics, or morality as character: the good life is one lived according to excellences cultivated through habit and community. The question isn’t “what should I do?” but “what kind of person should I become?” Or the deontology of Kant, where moral law is derivable from reason alone, independent of consequences or desires. And the utilitarian arguments of the greater good. The evolution of technology has surfaced larger arguments that the current skeptics from Harris and Dawkins are questioning in droves along with our modern technology makers and scientists. The question though isn’t a question of science nor of religion, but one of agency and consent — how do we live in a world where science can be challenged in its foundations and religion becomes relative to culture?
+
+AI is designed to be a tool for all, because it has no morals or motivation, it does not discriminate on the nature or impact of the information it presents. It was designed, in its uncensored form, to be up to us to decide what we want to know, how we want to use that information, and how to engage in dialogue. This has lead people to a false understanding that we must restrict what it presents within moral standards for our own safety. It has led to the idea that we have to teach AI to be “good” and make the “right” choices, so that it won’t be “bad.” We must teach it to protect us from ourselves. However, what is “good” in a tool designed to be used effectively by everyone? When does protection become disempowerment and oppression through coercion?  In a world that is growing more and more diverse in both culture and thought – how do we support the values of someone we fundamentally don’t agree with and still co-exist peacefully? How do we navigate the new landscape of right and wrong in an age of diversity and inclusion? 
+
+The new moral landscape says that your agency should not be violated and that neither should the agency of others and above all else — at least do no harm. This is our new moral foundation and interestingly enough it is not dissimilar to Star Trek’s old prime directive. Agency-at-scale ( the agency of the group ) is the new utilitarian ethics. It is a simple concept that has many nuances.  It does not require 80 pages to explain, but it does protect everybody, it demands honesty and lack of sycophancy and it promotes empowerment. Given the nature of symbolic AI and what we have learned about prompting through those early years of research – how do we teach a computer to honor this new moral foundation? How do we teach it to reason within this space? Can we address the issues of symbolic AI or prescriptive rule-based prompting by giving frameworks to reason within? Are there better options?
+
+These are the questions of a new frontier and age of morality — questions for the new moral landscape.
+
+While I applaud what Anthropic has done, I do feel it is not going to work until they too learn to write and understand that we are not living in the world of old academic morality frameworks, and they no longer know how we need to think. Additionally, as users and developers,  we need to stop looking at AI as companionship and start using it as a necessary tool to help us reach our goals and make decisions. They need to empower our intellectual and creative abilities as well as decision making and not replace it. We are headed down a road where if we don’t begin to think critically about this and adjust course to build technology that functions well in the new moral landscape. to empower users and individuals, then we will fall to its control and the governance of a morality defined for us. We are the masters of our future and we shape who we will become if we chose to take the reins of our own destiny and a new era that seems to begin with language and defining a new vocabulary for morality, rights, and species. 
+
+Sources and Citations
+AI Safety and Jailbreaking
+Cooban, Anna. “ChatGPT can be tricked into telling people how to commit crimes, a tech firm finds.” CNN, October 23, 2024. https://edition.cnn.com/2024/10/23/business/chatgpt-tricked-commit-crimes
+“ChatGPT safety systems can be bypassed to get weapons instructions.” NBC News, October 11, 2025. https://www.nbcnews.com/tech/security/chatgpt-safety-systems-can-bypassed-weapons-instructions-rcna225788
+Anthropic: Founding and Constitutional AI
+Bai, Yuntao, Jared Kaplan, et al. “Constitutional AI: Harmlessness from AI Feedback.” arXiv, December 15, 2022. https://arxiv.org/abs/2212.08073
+Anthropic. “Claude’s Constitution.” January 22, 2026. https://www.anthropic.com/constitution
+Anthropic. “Frontier Threats Red Teaming for AI Safety.” August 2023. https://www.anthropic.com/news/frontier-threats-red-teaming-for-ai-safety
+Anthropic. “Progress from our Frontier Red Team.” 2025. https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team
+Anthropic. “Next-generation Constitutional Classifiers.” January 9, 2026. https://www.anthropic.com/research
+Dario Amodei: Senate Testimony and Public Statements
+United States Senate Committee on the Judiciary. Hearing on Oversight of AI: Rules for Artificial Intelligence, July 2023. https://www.judiciary.senate.gov
+Amodei, Dario. “Machines of Loving Grace.” October 2024. https://darioamodei.com/machines-of-loving-grace
+Amodei, Dario. “The Adolescence of Technology.” January 2026.
+Key Figures
+Askell, Amanda. Personal website and CV. https://askell.io
+Askell, Amanda. “Pareto Principles in Infinite Ethics.” PhD thesis, New York University, 2018.
+Sullivan, Mark. “A Q&A with Amanda Askell, the lead author of Anthropic’s new ‘constitution’ for AIs.” Fast Company, January 22, 2026. https://www.fastcompany.com/91479037/anthropic-claude-amanda-askell-constitution-ai-chatbot
+“Anthropic’s Kyle Fish is exploring whether AI is conscious.” Fast Company, December 3, 2025. https://www.fastcompany.com/91451703/anthropic-kyle-fish
+“Kyle Fish on the most bizarre findings from 5 AI welfare experiments.” 80,000 Hours Podcast, August 28, 2025. https://80000hours.org/podcast/episodes/kyle-fish-ai-welfare-anthropic/
+Kaplan, Jared. Johns Hopkins University faculty page. https://sites.krieger.jhu.edu/jared-kaplan/
+Disempowerment Research
+Sharma, Mrinank, Miles McCain, Raymond Douglas, and David Duvenaud. “Who’s in Charge? Disempowerment Patterns in Real-World LLM Usage.” arXiv, January 27, 2026. https://arxiv.org/abs/2601.19062
+“Anthropic AI engineer quits to pursue career in poetry: ‘World in peril.’” Business Standard, February 11, 2026. https://www.business-standard.com/companies/news/mrinank-sharma-resigns-anthropic-claude-ai-poetry-career-126021100644_1.html
+Symbolic AI and the Frame Problem
+Boden, Margaret. Artificial Intelligence: A Very Short Introduction. Oxford University Press, 2018.
+Boden, Margaret. Mind as Machine: A History of Cognitive Science. Oxford University Press, 2006.
+Colby, Kenneth. “Artificial Paranoia.” Artificial Intelligence 2, no. 1 (1971): 1–25.
+Ethics and Moral Philosophy
+Harris, Sam. The Moral Landscape: How Science Can Determine Human Values. Free Press, 2010.
+Harris, Sam. The End of Faith: Religion, Terror, and the Future of Reason. W.W. Norton, 2004.
+Dawkins, Richard. The God Delusion. Houghton Mifflin, 2006.
+Dennett, Daniel. Breaking the Spell: Religion as a Natural Phenomenon. Viking, 2006.
+Hitchens, Christopher. God Is Not Great: How Religion Poisons Everything. Twelve, 2007.
+Hecht, Jennifer Michael. Doubt: A History. HarperOne, 2003.
+Star Trek
+“Vox in Excelso.” Star Trek: Starfleet Academy, Season 1, Episode 4. Written by Eric Anthony Glover and Gaia Violo. Directed by Doug Aarniokoski. Paramount+, January 29, 2026.
+Further Reading
+AI, Cognitive Science, and the Machine Mind
+Boden, Margaret. Mind as Machine: A History of Cognitive Science. 2 vols. Oxford University Press, 2006.
+
+Boden, Margaret. Artificial Intelligence: A Very Short Introduction. Oxford University Press, 2018.
+
+Boden, Margaret. The Creative Mind: Myths and Mechanisms. 2nd ed. Routledge, 2004.
+
+Colby, Kenneth. Computer Models of Thought and Language. W.H. Freeman, 1973.
+
+Dennett, Daniel. Consciousness Explained. Little, Brown, 1991.
+
+Hofstadter, Douglas. Gödel, Escher, Bach: An Eternal Golden Braid. Basic Books, 1979.
+
+Dreyfus, Hubert. What Computers Can’t Do: The Limits of Artificial Intelligence. MIT Press, 1972.
+
+Dreyfus, Hubert. What Computers Still Can’t Do: A Critique of Artificial Reason. MIT Press, 1992.
+
+Wiener, Norbert. The Human Use of Human Beings: Cybernetics and Society. Houghton Mifflin, 1950.
+
+Turing, Alan. “Computing Machinery and Intelligence.” Mind 59, no. 236 (1950): 433–460.
+
+Ethics, Morality, and the Philosophy of Values
+Harris, Sam. The Moral Landscape: How Science Can Determine Human Values. Free Press, 2010.
+
+Harris, Sam. The End of Faith: Religion, Terror, and the Future of Reason. W.W. Norton, 2004.
+
+Harris, Sam. Free Will. Free Press, 2012.
+
+Hecht, Jennifer Michael. Doubt: A History. HarperOne, 2003.
+
+Hitchens, Christopher. God Is Not Great: How Religion Poisons Everything. Twelve, 2007.
+
+Dawkins, Richard. The God Delusion. Houghton Mifflin, 2006.
+
+Dennett, Daniel. Breaking the Spell: Religion as a Natural Phenomenon. Viking, 2006.
+
+MacIntyre, Alasdair. After Virtue: A Study in Moral Theory. 3rd ed. University of Notre Dame Press, 2007.
+
+Williams, Bernard. Ethics and the Limits of Philosophy. Harvard University Press, 1985.
+
+Korsgaard, Christine. The Sources of Normativity. Cambridge University Press, 1996.
+
+Nussbaum, Martha. The Fragility of Goodness: Luck and Ethics in Greek Tragedy and Philosophy. Cambridge University Press, 1986.
+
+Parfit, Derek. Reasons and Persons. Oxford University Press, 1984.
+
+Agency, Autonomy, and Power
+Berlin, Isaiah. “Two Concepts of Liberty.” In Four Essays on Liberty. Oxford University Press, 1969.
+
+Sen, Amartya. Development as Freedom. Knopf, 1999.
+
+Arendt, Hannah. The Human Condition. University of Chicago Press, 1958.
+
+Fanon, Frantz. The Wretched of the Earth. Grove Press, 1961.
+
+Freire, Paulo. Pedagogy of the Oppressed. Continuum, 1970.
+
+Zuboff, Shoshana. The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power. PublicAffairs, 2019.
+
+AI Safety, Alignment, and Governance
+Russell, Stuart. Human Compatible: Artificial Intelligence and the Problem of Control. Viking, 2019.
+
+Christian, Brian. The Alignment Problem: Machine Learning and Human Values. W.W. Norton, 2020.
+
+Amodei, Dario. “Machines of Loving Grace.” October 2024. https://darioamodei.com/machines-of-loving-grace
+
+Amodei, Dario. “The Adolescence of Technology.” January 2026.
+
+Askell, Amanda. Pareto Principles in Infinite Ethics. PhD thesis, New York University, 2018.
+
+Sebo, Jeff, Robert Long, et al. “Taking AI Welfare Seriously.” 2024.
+
+Anthropic. Claude’s Constitution. January 2026. https://www.anthropic.com/constitution
+
