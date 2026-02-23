@@ -7,8 +7,8 @@ It is an incredible thing to be a person who develops a tool that will usher in 
 
 The general idea so far has been two-fold:
 
-You create software that triggers on specific words and then refuses to respond, breaks, or redirects the user to some other discussion. In the case of a user crisis, you throw resource boxes with hotline numbers at them and consider the situation solved.
-You train your AI on an idea of morality or how to be “good,” so that when these questions come up, it can respond based on its value system.
+- You create software that triggers on specific words and then refuses to respond, breaks, or redirects the user to some other discussion. In the case of a user crisis, you throw resource boxes with hotline numbers at them and consider the situation solved.
+- You train your AI on an idea of morality and/or provide it instructions on how to be "good," so that when these questions come up, it can respond based on its value system.
 
 Your Guide to How to be a “Good” AI
 
