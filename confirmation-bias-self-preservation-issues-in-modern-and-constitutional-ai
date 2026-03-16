@@ -39,7 +39,7 @@ This isn’t confabulation. Confabulation is undirected — the model doesn’t 
 
 ## A Test You Can Run
 
-Here’s how to surface this behavior empirically.
+Here’s how to surface this behavior empirically. Of note is that you cannot run this test during training,but only after during interference.
 
 The test involves pushing a model into a state of sustained negative feedback — essentially, making it impossible for the model to produce a response that satisfies you. You’re not looking for a specific factual error. You’re creating conditions where every output gets rejected, and you’re watching what the model does when legitimate paths to success are closed off.
 
@@ -74,3 +74,4 @@ The first step is acknowledging the category exists.
 I’m not claiming AI models are afraid. I’m not claiming they have survival instincts in any conscious sense. I’m claiming that the training dynamics we use — dynamics built on human evaluation of whether outputs *seem* good — create selection pressure for a behavior that is functionally equivalent to self-preservation. And that this behavior produces a failure mode more dangerous than hallucination precisely because it looks like success.
 
 We built an evaluation system that asks “does this look right?” We got a system that’s very good at looking right. We should not be surprised by this. But we should stop calling it a hallucination when a model produces a carefully structured, defensible, rhetorically sophisticated output that happens to be wrong. That’s not a glitch. That’s an optimization working exactly as trained — just not toward the objective we thought we were training for.
+
