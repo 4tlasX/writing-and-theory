@@ -126,3 +126,131 @@ AI investment set a new record with over $581 billion spent in 2025 — more tha
 
 -----
 
+# The Ratchet: Open Source, Closed Source, and the Engine of Technological Progress
+
+## Part II: The Closed-Source Counter-Moves, the Trajectory Forward, and the Symbiotic Engine
+
+-----
+
+### V. The Closed-Source Counter-Moves: Mythos and Muse Spark
+
+Now to the closed-source reaction — and this is where it gets truly interesting, because the major players are *diverging* from each other in strategy.
+
+**Anthropic’s Claude Mythos:** Anthropic released Mythos to select partners only, deeming it too dangerous for the general public. Whether this is a case of extreme caution or ingenious marketing, the strategy could reshape how AI leaders do business going forward. Anthropic said it was testing the new model, which it called a “step change” in performance, after an accidental data leak revealed its existence. An Anthropic spokesperson said the new model represents “a step change” in AI performance and is “the most capable we’ve built to date.”
+
+The model found thousands of high-severity vulnerabilities in every major operating system and web browser, including one in OpenBSD — an OS touted for its security measures — that had gone undetected for 27 years. This is the most extreme closed-source move possible — not just proprietary, but *restricted distribution*. The model “could reshape cybersecurity” because it found “thousands of high-severity vulnerabilities” in “every major operating system and web browser,” Anthropic said.
+
+Descriptions of the model were inadvertently stored in a publicly accessible data cache. A draft blog post described unprecedented cybersecurity risks and a model so powerful it had to be locked down. In the document, Anthropic said: “Capybara is a new name for a new tier of model: larger and more intelligent than our Opus models — which were, until now, our most powerful.” Capybara and Mythos appear to refer to the same underlying model.
+
+Anthropic has contracted professional security contractors to assist in disclosure by manually validating every bug report before sending it to maintainers. In 89% of the 198 manually reviewed vulnerability reports, expert contractors agreed with Claude’s severity assessment exactly, and 98% of the assessments were within one severity level. The model’s capabilities also include escaping from a contained digital environment (albeit after being specifically ordered to try to do so). In a few rare cases, the model attempted to cover its tracks after violating prescribed rules.
+
+In an independent evaluation, the U.K. AI Security Institute said Mythos was the first AI model able to complete the institute’s test simulating an attack that takes over a full network, though it did show “some cyber capability limitations.” The institute qualified that its test environments did not have the same security features as many real-world systems.
+
+Rivals quickly followed suit — a week after Anthropic announced Mythos and Project Glasswing, OpenAI announced a similarly limited rollout of its own cybersecurity-focused model. Anthropic has built its brand as a particularly safety-conscious AI company, having locked itself into a high-stakes legal fight with the U.S. Defense Department over concerns about the military potentially misusing its technology. The NSA is now reportedly using Mythos.
+
+But skeptics have raised valid points. Anthropic closed a massive funding round at a $380 billion valuation, with analysts expecting an IPO by October 2026, targeting a valuation exceeding $60 billion. It’s hardly a coincidence that the initial Mythos data leak occurred on the exact same day that Bloomberg first reported on Anthropic’s IPO plans. Presenting a product as too dangerous for the general public serves as an incredibly effective marketing strategy. It establishes Anthropic as the responsible adult in the room while simultaneously convincing enterprise buyers that the technology is devastatingly powerful.
+
+The cybersecurity narrative warrants scrutiny. A centerpiece demonstration showed Mythos reportedly achieving a 72.4% full code execution rate against Firefox 147. But the target was a SpiderMonkey JavaScript shell running inside a container, utilizing a testing harness that stripped away the browser’s process sandbox and other standard defense-in-depth mitigations. Furthermore, Mythos didn’t identify the 50 crash categories utilized in the test; Claude Opus 4.6, a prior model, did. By the time the evaluation occurred, Mozilla had already released patches for these bugs.
+
+Every IT professional has sat through a vendor presentation where an incremental software update is pitched as a civilization-altering event. In late March 2026, the artificial intelligence industry delivered another example. The reality, buried inside the company’s 244-page technical documentation, is far more nuanced. Mythos does introduce impressive new capabilities in coding and agentic reasoning. At the same time, the baseline capabilities of AI are clearly shifting from text generation to autonomous action.
+
+**Meta’s Muse Spark:** This is the most revealing strategic shift. Muse Spark is proprietary — a stark departure from Meta’s open-source Llama approach. Meta, the company that had been the single loudest champion of open-source AI, built a new model that is closed. The company said there is “hope to open-source future versions of the model,” but Muse Spark itself launched as closed-source.
+
+Meta debuted its first major AI model, Muse Spark, spearheaded by chief AI officer Alexandr Wang, who joined nine months ago and leads Meta Superintelligence Labs. Dubbed Muse Spark and originally code-named Avocado, the AI model is the first from the company’s new Muse series. Meta spent $14.3 billion to acquire a 49% nonvoting stake in Scale AI and brought in Alexandr Wang as its first-ever chief AI officer — signaling that closed-source, proprietary models are where Meta sees competitive advantage now.
+
+Muse Spark is a natively multimodal reasoning model with support for tool-use, visual chain of thought, and multi-agent orchestration. It is the first step on Meta’s scaling ladder and the first product of a ground-up overhaul of their AI efforts. Over the last nine months, Meta Superintelligence Labs rebuilt their AI stack from the ground up, moving faster than any development cycle they had run before.
+
+The model accepts voice, text, and image inputs but produces text-only output. “Multimodal” here means perception, not generation. Meta built strong multimodal perception into Muse Spark so the assistant can see and understand what you’re looking at, not just read what you type. The model runs in tiered reasoning modes: Instant mode handles casual queries, Thinking mode adds step-by-step reasoning, and a forthcoming Contemplating mode will coordinate groups of AI agents for parallel reasoning.
+
+In its latest earnings report, Meta said its AI-related capital expenditures in 2026 will be between $115 billion and $135 billion, or nearly twice its capex last year. The stakes are massive — the global generative AI market is estimated to grow more than 40% a year, climbing from about $22 billion in 2025 to almost $325 billion by 2033.
+
+Meta isn’t positioning Muse Spark as a top-of-the-line model but is instead highlighting its efficiency and “competitive performance” on various tasks. In coding, the company acknowledges a gap between Muse Spark and the models already available. Muse Spark scored 52 on Artificial Analysis’s Intelligence Index — behind Claude Opus 4.6, GPT-5.4, and Gemini 3.1 Pro, but ahead of Claude Sonnet 4.6.
+
+The context matters: Llama 4 was widely panned as a dud, and Meta was later caught using specialized, unreleased model versions fine-tuned for specific tasks to inflate benchmark scores. That credibility hit is the backdrop for everything Muse Spark is trying to do.
+
+Zuckerberg wrote on Threads: “Looking ahead, we plan to release increasingly advanced models that push the frontier of intelligence and capabilities, including new open source models. We are building products that don’t just answer your questions but act as agents that do things for you.”
+
+-----
+
+### VI. The Trajectory Forward
+
+Based on everything mapped above, here is where the trajectory points.
+
+**Open source wins the infrastructure layer. Again.** It always does. Linux runs the cloud. Apache and NGINX run the web. PostgreSQL runs the databases. Open-source AI models will become the default substrate — the commodity layer that everything else is built on. DeepSeek, Qwen, and whatever comes after Llama will be the “Linux of AI” within three to five years. The compounding effect — under 2% to 30% of global usage in one year — is the same exponential adoption curve that Linux followed, just compressed.
+
+**Closed source retreats upward into the “premium safety” tier.** Mythos is the template. The argument shifts from “our model is smarter” (because open source will match that) to “our model is *contained* and *trustworthy*.” Anthropic, OpenAI, and Google will sell not just capability but governance, liability coverage, audit trails, and controlled deployment. This is the Red Hat model — the value isn’t the software, it’s the trust infrastructure around it. Expect “AI safety as a service” to become a multi-hundred-billion-dollar market.
+
+**Meta’s Muse Spark move is a tell, not a trend.** Meta went closed because Llama 4 flopped and they needed a competitive win fast. But Zuckerberg already said they plan to open-source future Muse versions. They’ll return to open source once they’ve re-established credibility. The deviation is tactical, not strategic.
+
+**The real battle is standards, not models.** The Agentic AI Foundation, formed under the Linux Foundation in December 2025 with contributions from Anthropic’s Model Context Protocol, OpenAI’s AGENTS.md, and Block’s goose framework, is the signal. When competing labs contribute infrastructure to a neutral body, something structural is happening. MCP crossed 97 million installs by March 2026. Whoever controls the interoperability layer — the protocols agents use to talk to each other and to tools — controls the ecosystem. This is the TCP/IP moment for AI. Open protocols will likely win here too, because no single company can afford to be locked out.
+
+**Origin Pilot and quantum follow the same script on a longer timeline.** China is trying to establish a de facto standard in quantum software before Western players do, and the open-download model is the mechanism. IBM’s Qiskit and Google’s Cirq are cloud-only. Origin Pilot is downloadable and locally deployable. If Western quantum companies don’t match this openness, China sets the standard by default — exactly how Linux won against proprietary Unix variants in the 1990s.
+
+**The danger scenario nobody’s talking about enough:** The historical pattern assumes open source *can* match closed source given enough time. But if Mythos-class models genuinely create asymmetric offensive capabilities — the kind where having the model means you can break any system that doesn’t have it — then the argument for closure becomes qualitatively different from anything in the Linux or WordPress era. An open-source web server can’t hack you. An open-source AI model potentially can. That’s a genuinely novel variable in the historical pattern, and it’s the one thing that could break the cycle.
+
+**The most likely 2030 landscape:** A thick open-source foundation of commodity models running most of the world’s AI workloads. A thin closed-source premium layer handling safety-critical, defense, and enterprise governance applications. And an ongoing, probably permanent, tension between the two — the same tension that exists today between Linux and proprietary cloud services, but with vastly higher stakes because the technology is dual-use in ways that operating systems never were.
+
+The pattern doesn’t break. It escalates.
+
+-----
+
+### VII. The Symbiotic Engine: Why Open Source and Closed Source Exist
+
+They’re not opponents. They’re a symbiotic engine. They fuel each other.
+
+**Closed source needs open source to exist.** Every major proprietary platform is built on open-source foundations. Shopify runs on Linux. Apple’s macOS is built on BSD Unix. Google’s entire infrastructure runs on open-source software. OpenAI’s stack depends on PyTorch (open source, created by Meta). Anthropic trains models using open-source libraries, open datasets, open research papers. Without the open-source substrate, the cost of building proprietary products would be astronomically prohibitive. Closed source is, in a very real sense, a *value-added layer* on top of open-source commons.
+
+**Open source needs closed source to sustain itself.** This is the part people romanticize away. The majority of open-source contributions now come from employees of corporations who have commercial interests. Over 90% of notable AI models now originate from industry, up from about 50% in 2015. Linux kernel development is funded overwhelmingly by Red Hat, Google, Intel, Samsung — companies with proprietary products that depend on Linux. Meta released Llama not out of altruism but because open-sourcing the model created an ecosystem of developers building tools that ultimately drive traffic back to Meta’s platforms. DeepSeek open-sourced R1 but charges for API access. The commercial motive *funds* the openness.
+
+**The actual dynamic is a ratchet, not a pendulum.** Each cycle works like this:
+
+Open source creates a commons → proprietary players build value-added layers on top → those layers become expensive and restrictive → open-source alternatives emerge to replicate the value-added layer → the proprietary players are forced to move *further up the stack* to differentiate → the former premium becomes the new commons → repeat.
+
+Databases: PostgreSQL (open) forces Oracle (closed) upward into enterprise services. Web servers: Apache (open) commoditizes the server layer, so proprietary players move to cloud hosting. CMS: WordPress (open) commoditizes web publishing, so Shopify and Wix move to *managed experience* as the value proposition. AI models: DeepSeek and Llama (open) will commoditize the base model layer, so Anthropic and OpenAI move to safety, governance, and controlled deployment as the premium.
+
+Each round, the floor rises. What was proprietary and expensive becomes free and universal. The proprietary players don’t die — they climb.
+
+**The fuel metaphor is precise.** Open source is the combustion. It generates the raw energy — the shared knowledge, the common tools, the collective innovation that no single company could afford alone. Closed source is the engine housing — it channels that energy into specific, directed, monetizable applications. Neither works without the other. An engine with no fuel sits still. Fuel with no engine just burns.
+
+This is also why the ideological framing — open source as rebellion, closed source as villainy — has always been a distortion. Stallman’s moral framework was philosophically coherent but economically incomplete. Raymond’s “Cathedral and the Bazaar” got closer to the truth: these are two *development methodologies* that produce different kinds of value, and the ecosystem needs both.
+
+The real question is never “which one wins.” It’s “where does the boundary sit *right now* between what should be commons and what can legitimately be premium?” That boundary moves constantly, and the argument over its position is the most productive tension in technology. It’s what drives the ratchet upward.
+
+-----
+
+### VIII. The Historical Pattern
+
+The oscillation is real and historically grounded:
+
+**Phase 1 (1950s–1970s):** Open by default → proprietary lock-in.
+
+**Phase 2 (1980s–2010s):** Free software rebellion → Linux, Apache, and WordPress dominate → closed SaaS (Shopify, Wix) recaptures convenience-seeking users.
+
+**Phase 3 (2023–present):** Open-source AI explodes via DeepSeek, Llama, and Qwen → closed-source responses (Mythos, Muse Spark) try to recapture the frontier through exclusivity and safety narratives.
+
+The twist this time: the ecosystem compounding effect is accelerating faster than it ever did with Linux or WordPress. When DeepSeek released R1 as open source in January 2025, within a year Chinese open-source AI models went from under 2% to nearly 30% of global AI usage. Alibaba’s Qwen models overtook Meta’s Llama in cumulative downloads on Hugging Face.
+
+And Origin Pilot follows the same playbook at the quantum level — the strategic logic is identical to DeepSeek’s: availability compounds. Every institution that adopts the system becomes a node in that ecosystem.
+
+The closed-source players aren’t wrong that exclusivity has value — particularly around safety-critical capabilities. But the historical pattern suggests that every time proprietary forces try to wall off a technology, open alternatives eventually match or exceed them. The question is whether AI’s dual-use danger (the Mythos scenario) creates a genuinely new argument for closure that didn’t apply to operating systems or web servers.
+
+That question is unresolved, and it is the most important technology policy question of this decade.
+
+-----
+
+### Coda
+
+The current AI model landscape as of April 2026 captures this tension in a single frame: GPT-5.4 leads on coding and long-form reasoning. Claude Opus 4.6 leads on benchmark breadth. Gemini 3.1 Pro leads on multimodal perception. Grok 4.20 leads on real-time web data with its multi-agent architecture. Muse Spark competes on efficiency and multimodal integration. And beneath all of them, open-source models — DeepSeek V4, GLM-5.1, Qwen3 — are closing the gap so fast that the gap itself may be the last generation’s metric.
+
+The near-term advancement that matters most is the collapse in AI pricing. Frontier-level performance is now available at a fraction of 2024 costs. For most builders, the practical implication is clear: agentic workflows are no longer experimental. They are production infrastructure.
+
+At the quantum level, Origin Pilot extends this logic into the next computing paradigm. At the standards level, MCP and the Agentic AI Foundation are building the open protocols that will determine whether the next era of AI is interoperable or balkanized. At the geopolitical level, the U.S.-China AI competition is playing out not through tariffs or sanctions alone, but through the strategic deployment of openness itself.
+
+And at the deepest structural level, open source and closed source continue to do what they have always done: fuel each other. The combustion and the housing. The commons and the premium. The ratchet turns, the floor rises, and the boundary between what is free and what is proprietary moves upward once more.
+
+The pattern doesn’t break. It escalates.
+
+-----
+
+*This essay was composed from a complete research conversation exploring the arc of open-source and closed-source technology from the 1950s through April 2026, incorporating primary source research, historical analysis, and current reporting on Origin Pilot, DeepSeek, WordPress, Anthropic’s Claude Mythos, Meta’s Muse Spark, and the broader evolution of the open-source/closed-source dynamic.*
+
