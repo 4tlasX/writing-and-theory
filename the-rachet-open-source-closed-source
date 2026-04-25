@@ -130,7 +130,7 @@ AI investment set a new record with over $581 billion spent in 2025 — more tha
 
 ## Part II: The Closed-Source Counter-Moves, the Trajectory Forward, and the Symbiotic Engine
 
------
+-----h
 
 ### V. The Closed-Source Counter-Moves: Mythos and Muse Spark
 
@@ -253,4 +253,126 @@ The pattern doesn’t break. It escalates.
 -----
 
 *This essay was composed from a complete research conversation exploring the arc of open-source and closed-source technology from the 1950s through April 2026, incorporating primary source research, historical analysis, and current reporting on Origin Pilot, DeepSeek, WordPress, Anthropic’s Claude Mythos, Meta’s Muse Spark, and the broader evolution of the open-source/closed-source dynamic.*
+
+# The Ratchet: Open Source, Closed Source, and the Engine of Technological Progress
+
+## Sources and References
+
+-----
+
+### I. Origin Pilot and Quantum Computing
+
+1. The Quantum Insider. “Chinese Firm Releases Open-Source Quantum Operating System For Public Download.” February 27, 2026. https://thequantuminsider.com/2026/02/27/chinese-firm-releases-open-source-quantum-operating-system-for-public-download/
+1. Quantum Computing Report. “China Open-Sources ‘Origin Pilot’: The First Domestically Developed Quantum OS.” March 8, 2026. https://quantumcomputingreport.com/china-open-sources-origin-pilot-the-first-domestically-developed-quantum-os/
+1. TechTopia (Medium). “China Just Open-Sourced the World’s First Quantum OS — And Nobody’s Talking About It.” February 28, 2026. https://medium.com/@techtopiaa/china-just-open-sourced-the-worlds-first-quantum-os-and-nobody-s-talking-about-it-87bf1f5639ca
+1. Post Quantum. “China’s Quantum OS Play: Origin Pilot and the Battle for the Integration Layer.” March 7, 2026. https://postquantum.com/quantum-computing/china-quantum-os-origin-pilot/
+1. Dim Sum Daily. “China Unveils Open-Source Quantum OS ‘Origin Pilot’ for Public Download.” February 26, 2026. https://www.dimsumdaily.hk/china-unveils-open%E2%80%91source-quantum-os-origin-pilot-for-public-download/
+1. China Daily. “China’s Quantum Computer Operating System Origin Pilot Opens for Public Download.” February 26, 2026. https://www.chinadaily.com.cn/a/202602/26/WS699ff3d0a310d6866eb3a61e.html
+1. Global Times. “China’s First Homegrown Quantum Computing Operating System Available for Online Download.” February 25, 2026. https://www.globaltimes.cn/page/202602/1355718.shtml
+1. Modern Mechanics 24. “China’s Quantum Computing OS Now Available for Download.” February 28, 2026. https://modernmechanics24.com/post/china-quantum-computing-os-download/
+1. Write A Catalyst (Medium). “What Is Origin Pilot? China’s Open-Source Quantum Operating System.” March 18, 2026. https://medium.com/write-a-catalyst/what-is-origin-pilot-chinas-open-source-quantum-operating-system-79ed5d746532
+
+-----
+
+### II. History of Open Source Software
+
+1. Wikipedia. “History of Free and Open-Source Software.” Accessed April 2026. https://en.wikipedia.org/wiki/History_of_free_and_open-source_software
+1. BTW.so. “History of Open Source Software (with an Interactive Timeline).” August 16, 2021. https://www.btw.so/blog/history-of-open-source-software/
+1. Open Source Initiative. “History of the Open Source Initiative.” June 3, 2025. https://opensource.org/about/history-of-the-open-source-initiative
+1. OpenSource Science B.V. “The History of Open Source.” September 9, 2025. https://os-sci.com/blog/our-blog-posts-1/the-history-of-open-source-132
+1. Maximilian Michels. “A Brief History of Open Source.” May 31, 2021. https://maximilianmichels.com/2021/history-of-open-source/
+1. freeCodeCamp. “A Brief History of Open Source.” April 3, 2023. https://www.freecodecamp.org/news/brief-history-of-open-source/
+1. DEV Community. “A Brief History of Open Source.” April 11, 2023. https://dev.to/ndutared/a-brief-history-of-open-source-5o2
+1. JMU Maps/CISE. “Open Source History.” Undated. https://maps.cise.jmu.edu/public/canterjw/ModuleOne/GIS/gishistory.htm
+1. Codemotion Magazine. “Infographic: The History of Open Source.” January 30, 2024. https://www.codemotion.com/magazine/infographics/the-history-of-open-source/
+1. Milvus AI Quick Reference. “What Is the History of Open-Source?” Undated. https://milvus.io/ai-quick-reference/what-is-the-history-of-opensource
+
+-----
+
+### III. WordPress Market Share and CMS Competition
+
+1. Digital Applied. “WordPress Statistics 2026: 120+ Market Share Data Points.” April 2026. https://www.digitalapplied.com/blog/wordpress-statistics-2026-market-share-data
+1. CMS Knowledge Base (CMSConf). “CMS Market Share 2026: Statistics, Trends and Analysis.” December 19, 2025. https://cmsconf.com/knowledge/cms-market-share-2026/
+1. WPBeginner. “2026’s CMS Market Share Report — Latest Trends and Usage Stats.” January 23, 2026. https://www.wpbeginner.com/research/cms-market-share-report-latest-trends-and-usage-stats/
+1. MobiLoud. “WordPress Market Share, Usage and More Key Statistics for 2025.” Undated. https://www.mobiloud.com/blog/wordpress-market-share
+1. ThemeHunk. “WordPress Market Share Statistics & Trends in (April 2026).” April 2026. https://themehunk.com/wordpress-market-share/
+1. Bluehost. “WordPress’s Market Share Explained: 2026 Growth, Insights and Top Websites.” February 9, 2026. https://www.bluehost.com/blog/wordpress-market-share/
+1. Strapi. “Top 6 Open Source CMS Platforms in 2026.” February 1, 2026. https://strapi.io/blog/open-source-cms-platforms
+1. WP Engine. “The Rise of Multi-CMS, WordPress, and Headless in the Enterprise.” July 11, 2025. https://wpengine.com/resources/the-rise-of-multi-cms-wordpress-and-headless-in-the-enterprise/
+1. Zippia. “WordPress Market Share + Statistics [2026]: How Many Websites Use WordPress?” January 14, 2026. https://www.zippia.com/advice/wordpress-market-share-statistics/
+1. Seahawk Media. “Latest WordPress Market Share Data, Statistics, News, Releases and Trends.” January 4, 2026. https://seahawkmedia.com/wordpress/wordpress-market-share-data-statistics/
+
+-----
+
+### IV. Closed Source vs. Open Source in Ecommerce and SaaS
+
+1. Shopify India Blog. “5 Best Free Open-Source Ecommerce Platforms (2025).” 2025. https://www.shopify.com/in/blog/open-source-ecommerce
+1. Liquid Web. “The Top 12 Open Source Ecommerce Platforms [+ Alternatives].” February 23, 2026. https://www.liquidweb.com/ecommerce/open-source/
+1. Exposure Ninja. “Wix vs Squarespace vs WordPress vs Shopify 2025.” November 21, 2025. https://exposureninja.com/blog/wix-vs-squarespace-vs-wordpress-vs-shopify/
+1. Putler. “8 Best Shopify Alternatives for 2026.” April 2026. https://www.putler.com/shopify-alternatives
+1. BigCommerce. “SaaS Ecommerce: Fast, Secure, and Scalable Solutions.” April 2026. https://www.bigcommerce.com/articles/ecommerce/saas-ecommerce/
+1. WooCommerce. “Why Growing Brands Leave SaaS for Open Source Ecommerce.” February 27, 2026. https://woocommerce.com/posts/open-source-ecommerce/
+1. Squarespace. “8 Shopify Alternatives for 2026.” November 21, 2025. https://www.squarespace.com/blog/shopify-alternatives
+
+-----
+
+### V. Open Source AI Models and the AI Landscape
+
+1. LLM Stats. “AI Updates Today (April 2026) — Latest AI Model Releases.” April 2026. https://llm-stats.com/llm-updates
+1. Red Hat Developer. “The State of Open Source AI Models in 2025.” January 7, 2026. https://developers.redhat.com/articles/2026/01/07/state-open-source-ai-models-2025
+1. Medium (@urano10). “New AI Models Coming in 2026 and What They Do.” March 15, 2026. https://medium.com/@urano10/the-future-of-ai-models-in-2026-whats-actually-coming-410141f3c979
+1. IEEE Spectrum. “Stanford’s AI Index for 2026 Shows the State of AI.” April 2026. https://spectrum.ieee.org/state-of-ai-index-2026
+1. MEAN CEO Blog. “New AI Model Releases News | April 2026 (Startup Edition).” April 2026. https://blog.mean.ceo/new-ai-model-releases-news-april-2026/
+1. Crescendo AI. “Latest AI News, Developments, and Breakthroughs | 2026.” April 2026. https://www.crescendo.ai/news/latest-ai-news-and-updates
+1. devFlokers. “AI Breakthroughs March 2026: Open Source and Model News.” March 2026. https://www.devflokers.com/blog/ai-breakthroughs-open-source-march-2026
+1. AI Timeline (nhlocal, GitHub Pages). “AI Timeline.” Undated, continuously updated. https://nhlocal.github.io/AiTimeline/
+1. Medium (@justjlee). “The Rise of Open-Source AI Models (2024–2025).” July 2, 2025. https://medium.com/@justjlee/the-rise-of-open-source-ai-models-2024-2025-11354a0e8e23
+
+-----
+
+### VI. DeepSeek
+
+1. World Economic Forum. “What Is Open-Source AI and How Could DeepSeek Change the Industry?” February 2025. https://www.weforum.org/stories/2025/02/open-source-ai-innovation-deepseek/
+1. Educational Technology and Change Journal. “Status of DeepSeek’s R1 Model (Nov. 2, 2025).” November 2, 2025. https://etcjournal.com/2025/11/02/status-of-deepseeks-r1-model-nov-2-2025/
+1. Bloomberg. “How DeepSeek and Open-Source AI Models Are Disrupting Big Tech.” August 6, 2025. https://www.bloomberg.com/news/articles/2025-08-06/how-deepseek-and-open-source-ai-models-are-disrupting-big-tech
+1. Wikipedia. “DeepSeek.” Accessed April 25, 2026. https://en.wikipedia.org/wiki/DeepSeek
+1. Carnegie Endowment for International Peace. “DeepSeek R1: Implications of a New AI Era for Africa.” March 25, 2025. https://carnegieendowment.org/posts/2025/03/deepseek-ai-implications-africa
+1. CNBC. “China’s Open-Source Embrace Upends Conventional Wisdom Around Artificial Intelligence.” March 24, 2025. https://www.cnbc.com/2025/03/24/china-open-source-deepseek-ai-spurs-innovation-and-adoption.html
+1. IBM Think. “DeepSeek Goes Global, AI Goes Local.” March 18, 2026. https://www.ibm.com/think/news/deepseek-global-ai-local
+1. CNBC. “China’s DeepSeek Quietly Releases Upgraded R1 AI Model, Ramping Up Competition with OpenAI.” May 29, 2025. https://www.cnbc.com/2025/05/29/chinas-deepseek-releases-upgraded-r1-ai-model-in-openai-competition.html
+1. CNBC. “China’s DeepSeek Releases Preview of Long-Awaited V4 Model as AI Race Intensifies.” April 24, 2026. https://www.cnbc.com/2026/04/24/deepseek-v4-llm-preview-open-source-ai-competition-china.html
+
+-----
+
+### VII. Anthropic Claude Mythos
+
+1. Anthropic Red Team Blog. “Claude Mythos Preview.” April 2026. https://red.anthropic.com/2026/mythos-preview/
+1. Fortune. “Anthropic ‘Mythos’ AI Model Representing ‘Step Change’ in Capabilities.” March 26, 2026. https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/
+1. Foreign Affairs Forum. “THE PROMETHEUS PROTOCOL: Anthropic’s ‘Mythos’ and the Calculated March Toward a Trillion-Dollar Hegemony — Part III.” April 24, 2026. https://www.faf.ae/home/2026/4/24/the-prometheus-protocol-anthropics-mythos-and-the-calculated-march-toward-a-trillion-dollar-hegemony-part-iii
+1. Built In. “Claude Mythos: Why Anthropic Won’t Release Its New AI Model.” April 22, 2026. https://builtin.com/articles/anthropic-claude-mythos
+1. Foreign Policy. “Anthropic’s Claude Mythos Preview Changes Cyber Calculus.” April 20, 2026. https://foreignpolicy.com/2026/04/20/claude-mythos-preview-anthropic-project-glasswing-cybersecurity-ai-hacking-danger/
+1. Spiceworks / MSN. “Anthropic’s Claude Mythos: Breakthrough or Hype Machine?” April 2026. https://www.msn.com/en-us/news/technology/anthropic-s-claude-mythos-breakthrough-or-hype-machine/ar-AA21tHpD
+
+-----
+
+### VIII. Meta Muse Spark
+
+1. Meta AI Blog. “Introducing Muse Spark: Scaling Towards Personal Superintelligence.” April 8, 2026. https://ai.meta.com/blog/introducing-muse-spark-msl/
+1. CNBC. “Meta Debuts New AI Model, Attempting to Catch Google, OpenAI After Spending Billions.” April 8, 2026. https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html
+1. Fortune. “Meta Unveils Muse Spark, Its First New AI Model Since Hiring Alexandr Wang.” April 8, 2026. https://fortune.com/2026/04/08/meta-unveils-muse-spark-mark-zuckerberg-ai-push/
+1. Axios. “Meta Debuts Muse Spark, First AI Model Under Alexandr Wang.” April 8, 2026. https://www.axios.com/2026/04/08/meta-muse-alexandr-wang
+1. WaveSpeed AI Blog. “What Is Muse Spark? Meta’s New AI Model.” April 2026. https://wavespeed.ai/blog/posts/what-is-muse-spark-meta-ai-model/
+1. WaveSpeed AI Blog. “Is There a Muse Spark API? Status and Alternatives.” April 2026. https://wavespeed.ai/blog/posts/is-there-muse-spark-api-2026/
+1. Meta Newsroom. “Introducing Muse Spark: Meta’s Most Powerful Model Yet.” April 8, 2026. https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/
+1. TechCrunch. “Meta Debuts the Muse Spark Model in a ‘Ground-Up Overhaul’ of Its AI.” April 8, 2026. https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/
+
+-----
+
+### IX. Additional and Supplementary Sources
+
+1. GitHub. “awesome-opensource-ai: Curated List of the Best Truly Open-Source AI Projects, Models, Tools, and Infrastructure.” Accessed April 2026. https://github.com/alvinreal/awesome-opensource-ai
+
+-----
+
+*All URLs verified and accessed as of April 25, 2026. Sources are numbered to correspond with the order in which they were consulted during the research conversation that produced this essay.*
 
