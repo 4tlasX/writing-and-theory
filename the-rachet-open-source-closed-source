@@ -1,0 +1,128 @@
+note: in progress not finished - initial start
+
+# The Ratchet: Open Source, Closed Source, and the Engine of Technological Progress
+
+## An Essay on the Symbiotic Cycle Driving Computing, the Web, and Artificial Intelligence
+
+-----
+
+## Part I: Origins, Dominance, Erosion, and the AI Explosion
+
+-----
+
+### Prologue
+
+Origin Pilot released as open source. Quantum is moving. And in the background, a pattern as old as computing itself is repeating — accelerated, amplified, and freighted with consequences that dwarf anything the Linux or WordPress eras produced. To understand where this is going, we have to look at where it’s been: open source’s early inception and rise through WordPress, the competition with closed source ebbing the market from open source, and how AI is now changing the entire landscape — from models to code to the evolution of open source itself. We must note the closed-source impact, the current closed-source model shifts like Mythos and Muse Spark, and what all of it means for the trajectory ahead. This is that story, told in full.
+
+-----
+
+### I. The Original Open Source Movement (1950s–2000s)
+
+Software sharing began as the default — in the 1950s and 1960s, source code was distributed freely with hardware, and universities shared modifications openly following academic principles of knowledge sharing. This was the natural state of computing. Then, in the 1970s, companies realized software was more profitable than hardware, and proprietary licensing took hold.
+
+Richard Stallman launched the GNU Project in 1983 and founded the Free Software Foundation in 1985, formalizing the moral and practical case for users’ rights to study, modify, and distribute software. He built almost everything needed for a complete free operating system — except the kernel.
+
+In 1991, Linus Torvalds built the Linux kernel, fulfilling the missing piece of Stallman’s vision. Then came the LAMP stack era — Linux, Apache, MySQL, PHP — which became the backbone of the dotcom explosion. The term “open source” was formally adopted in 1998, when the Open Source Initiative was co-founded by Eric Raymond and Bruce Perens, deliberately rebranding “free software” into business-friendly language.
+
+Systems based on a common “stack” of software with the Linux kernel at the base, Apache providing web services, the database engine MySQL to store data, and the programming language PHP to provide dynamic pages, came to be termed LAMP systems. In actuality, the programming language that predated PHP and dominated the web in the mid and late 1990s was Perl. Web forms were processed on the server side through Common Gateway Interface scripts written in Perl. The term “open source,” as related to free software, was in common use by 1995. In 1997, Eric S. Raymond published “The Cathedral and the Bazaar,” a reflective analysis of the hacker community and free software principles. The paper received significant attention in early 1998 and was one factor in motivating Netscape Communications Corporation to release their popular Netscape Communicator Internet suite as free software.
+
+The Apache Software Foundation was established in 1999. The first members were some of the creators of the Apache HTTP server, which was released in 1995. In 1999, Sourceforge.com was launched, allowing developers to easily share and develop source code. In 2000, the Linux Foundation was founded. In 2005, Linus Torvalds created the initial version of Git, an open-source version control system to speed up the distributed development of the Linux kernel. In 2008, GitHub.com was launched — a central platform for source code development based on Git. Also in 2008, Google released the first version of Android, today’s most used mobile operating system.
+
+The late 1990s and early 2000s marked the professionalization of open source with the IPOs of companies like Red Hat and VA Linux, which commercialized Linux distributions. Mozilla Firefox’s release in 2004 further expanded open source’s reach into web browsing, emphasizing privacy and security. These developments showcased open source’s economic potential and its ability to support sustainable business models.
+
+The history of free and open-source software begins at the advent of computer software in the early half of the 20th century. In the 1950s and 1960s, computer operating software and compilers were delivered as a part of hardware purchases without separate fees. At the time, source code — the human-readable form of software — was generally distributed with the software, providing the ability to fix bugs or add new functions. Universities were early adopters of computing technology. Many of the modifications developed by universities were openly shared, in keeping with the academic principles of sharing knowledge, and organizations sprung up to facilitate sharing. As large-scale operating systems matured, fewer organizations allowed modifications to the operating software, and eventually such operating systems were closed to modification.
+
+The roots of open-source software go deep, wide, and far back into the past, as early as the 1950s. In 1953, the A-2 system (an equivalent of today’s compilers) was released together with its source code, and customers were asked to send any improvements to UNIVAC (the Universal Automatic Computer). There were a few decades of open-source “silence” after the 1950s. The late 1970s and early 1980s saw a shift toward proprietary software as legal decisions granted software copyright protection, enabling commercial licensing models. In response, Stallman launched the GNU Project — and the cycle began.
+
+-----
+
+### II. WordPress and Open Source’s Peak Dominance
+
+WordPress launched in 2003 as a simple blogging tool. What happened next is one of the most extraordinary market captures in software history. As of 2026, WordPress powers 43.5% of all websites and 62.8% of the CMS market. Despite the rise of modern frameworks and no-code builders, WordPress has actually increased its overall web share by 1.2 percentage points year-over-year. Its dominance is structural: the ecosystem of developers, plugins, themes, and hosting providers creates switching costs that no competitor has overcome at scale.
+
+From 2011 to 2026, WordPress usage grew from 13.1% to 43.1% of all websites — roughly 810 million sites. WordPress commands a 64.2% market share among all CMS platforms. Each day, over 500 new WordPress sites are launched. This is more than just the CMS market share. When you take out the sites that don’t run on any known CMS, WordPress holds nearly two-thirds of the entire market. The next highest competitor is not close; Shopify has about 6.2% of the market.
+
+WordPress *is* the open source success story at consumer scale. It proved that community-driven, free, infinitely-extensible software could utterly dominate an industry.
+
+Security remains the platform’s most significant liability: WordPress sites face approximately 90,000 attacks per minute, and 97% of WordPress security vulnerabilities originate in plugins and themes rather than core software. Organizations running WordPress need dedicated security infrastructure — the default installation is not enterprise-grade without additional hardening.
+
+WooCommerce controls 36% of all online stores globally and processed an estimated $35 billion in gross merchandise volume in 2025, making it the largest open-source eCommerce platform by transaction volume.
+
+The bifurcation trend tells its own story: WordPress is simultaneously growing in total market share and declining in developer preference for new projects. The install base continues to expand through non-developer users while developer-led projects increasingly choose React-based frameworks, headless CMS solutions, or visual builders. WordPress remains excellent for content-heavy sites with non-technical editors, adequate for eCommerce through WooCommerce, and increasingly outmatched for performance-critical or developer-experience-driven projects.
+
+Among the top 5,000 domains — the high-traffic, enterprise segment — open source still leads. Open source technology (WordPress plus Drupal) claims the majority share (over 51.7%) even among the world’s largest sites, dispelling the myth that open source is only for small businesses. WordPress has seen a greater percentage increase in enterprise adoption over time than any other CMS and is on track to become the first choice for enterprise organizations. For many years, the notion that “something without a license couldn’t be good” prevailed when it came to large-scale global web projects, and proprietary solutions such as Adobe Experience Manager and Sitecore were commonly considered “safe” bets. But times have changed, drastically, and as new technologies and younger audiences have ushered in the need to go to market even faster — a place where open source technologies shine — usage of WordPress in the enterprise has increased.
+
+-----
+
+### III. Closed Source Fights Back: The SaaS Erosion
+
+But here’s where the pattern reveals its counter-rhythm. WordPress peaked at 65.2% CMS market share in 2022 and has since declined to 60.2%. What ate into it? Closed, proprietary SaaS platforms.
+
+Shopify grew from 0.3% market share in 2014 to 7.0% in 2025 — a 23x increase. Meanwhile, Joomla dropped from 9.3% to 1.9%, and Drupal from 5.5% to 1.1%. The pattern: open source CMS competitors didn’t lose to WordPress; they lost to *closed* platforms. In U.S. ecommerce specifically, SaaS platforms — Shopify, Squarespace, and Wix — collectively command 67.2% of the market, while open-source platforms like WooCommerce and Ecwid account for about 21.7%.
+
+The closed-source pitch was seductive: no server management, no plugin security nightmares, no maintenance. The non-technical user increasingly chose convenience. SaaS ecommerce platforms are decidedly more popular, and while open-source platforms offer customization and flexibility, they carry challenges that SaaS solutions help avoid. With a SaaS tool, you get a steady stream of product updates and new features. Open-source platforms, on the other hand, come with ongoing responsibilities that can catch entrepreneurs off guard — all software updates, bug fixes, and technical troubleshooting require continuous attention and specialized expertise.
+
+The trade-off between proprietary convenience and open-source freedom plays out in a specific tension: if you use a proprietary ecommerce platform like Shopify or Wix, you’re beholden to the terms of their licenses, which are much more stringent. Shopify has suspended stores selling CBD products, supplements, and even vintage items that triggered fraud filters — sometimes with little warning and limited appeal options. You could suddenly lose all the hard work you’ve put into your online store. In contrast, when you choose an open source tool like WooCommerce, you can use it for anything you’d like.
+
+Shopify has a 36% better total cost of ownership than WooCommerce according to its own data — though this claim warrants scrutiny given the source. In a 2024 survey by Perforce, 44.29% of respondents cited a lack of professional support and maintenance as a barrier to open-source adoption. This is the eternal vulnerability of open source: freedom requires capability.
+
+The headless CMS market — neither fully open nor fully closed, but an architectural hybrid — was valued at $0.86 billion in 2024 and is projected to reach $4.59 billion by 2033. This represents the emerging middle ground: open-source backends with proprietary front-end delivery layers.
+
+-----
+
+### IV. AI Blows the Doors Open Again
+
+Then AI happened, and the entire open-source/closed-source dynamic got reorganized. Here are the major open source AI developments that constitute a genuine paradigm shift.
+
+**The Open Source AI Timeline:**
+
+**2023:** Meta (Facebook) emerged as a major player in open-source AI by releasing the LLaMA series of large language models, cracking open frontier-scale models for the first time.
+
+**2024:** Meta’s Llama 3 family expanded the frontier. Mistral released multiple competitive open models. Alibaba’s Qwen series emerged as a force. Mistral integrated a vision component: in November 2024, Pixtral Large combined a 1B-parameter vision encoder with the text model for multimodal image understanding. DeepSeek unveiled DeepSeek-R1-Lite-Preview in November, incorporating reasoning capabilities. In December, DeepSeek-V3 was released.
+
+**January 2025:** DeepSeek launched its R1 model, providing responses comparable to GPT-4 and o1 at a fraction of the cost. The company claims it trained its V3 model for $6 million — far less than the $100 million cost for OpenAI’s GPT-4 in 2023 — and using approximately one-tenth the computing power consumed by Meta’s comparable model, Llama 3.1. DeepSeek significantly reduced training expenses by incorporating techniques such as mixture of experts (MoE) layers, training during ongoing trade restrictions on AI chip exports to China, using weaker AI chips intended for export and employing fewer units overall. Observers said this breakthrough sent “shock waves” through the industry, described as triggering a “Sputnik moment” for the US.
+
+DeepSeek overtook ChatGPT as the most downloaded free app on the Apple App Store in the US. Many believe its rapid rise could be a significant step in democratizing AI, allowing smaller companies, start-ups and individual developers to build on DeepSeek-R1. DeepSeek’s models are described as “open-weight,” meaning the exact parameters are openly shared, but the training data is not openly licensed. Since the January 2025 debut, the company has made its new models available under free and open-source software licenses, primarily the MIT License.
+
+Marc Andreessen hailed DeepSeek as “one of the most amazing and impressive breakthroughs I’ve ever seen — and as open source, a profound gift to the world.” AI scholar Kai-Fu Lee declared that “the biggest revelation from DeepSeek is that open-source has won.”
+
+The full-sized 671-billion-parameter model, as well as its smaller distilled versions, were made available through public repositories such as Hugging Face. This openness invited collaboration from researchers around the world and created an alternative to the increasingly closed ecosystems of models like OpenAI’s GPT-4 or Anthropic’s Claude series. For the broader AI community, R1 symbolized the return of accessibility and transparency to frontier-level research — qualities that had been fading from the industry’s top tiers.
+
+The launch had far-reaching effects globally. On the stock market, U.S. tech stocks for AI companies took a significant hit, caused by panic selloffs stemming from concerns over the potential disruption of the top positions of companies such as Nvidia and OpenAI.
+
+**Mid-2025:** Alibaba open-sources Qwen3 variants. Moonshot AI debuted Kimi K2, praised for its open-research focus. Zhipu open-sourced GLM-4.5, a 130B-parameter model tailored for intelligent-agent applications. Mistral’s lineup included “Mistral Small 3.1” (24B, Apache-2.0) and specialized models like Devstral, an open-source 24B code assistant released under Apache 2.0, optimized to run on a single NVIDIA RTX 4090 or even a 32GB RAM Mac. Devstral reportedly outperforms leading open models like Google’s Gemma 3 27B on the SWE-Bench code benchmark. This specialization strategy — creating domain-specific models — shows the power of open development to target niche needs.
+
+By mid-2024, there was a clear trend toward open-source LLMs in enterprise. Enterprises found that they could fine-tune open models on their proprietary data to achieve better accuracy on domain-specific tasks than a one-size-fits-all model. Developers were running LLMs locally on personal devices — something unheard of with GPT-3-sized models a few years ago. A moderately powerful PC with an RTX 4090 GPU could host a 13B or even 30B parameter model efficiently, thanks to techniques like 4-bit quantization.
+
+**Late 2025:** DeepSeek released V3.1 under MIT License, featuring a hybrid architecture with thinking and non-thinking modes, surpassing prior models by over 40% on certain benchmarks. V3.2 followed in December 2025. The Agentic AI Foundation formed under the Linux Foundation in December 2025, anchored by contributions from Anthropic’s Model Context Protocol (MCP), OpenAI’s AGENTS.md, and Block’s goose framework. When competing labs contribute infrastructure to a neutral body, something structural is happening.
+
+China’s open-source embrace upended conventional wisdom. DeepSeek’s success proved that open-source strategies can lead to faster innovation and broad adoption. Zhipu AI announced that 2025 would be “the year of open source.” Baidu released Ernie 4.5 and Ernie X1, making them free for individual users and planning open-source release. Companies were compelled to make these moves following DeepSeek’s emergence — with DeepSeek free, it became impossible for any other Chinese competitor to charge for the same thing.
+
+**February 2026:** China released Origin Pilot, its first domestically developed quantum operating system, for public download. The operating system, called Origin Pilot, was made available online, developed by Hefei-based Origin Quantum Computing Technology Co. Origin Pilot was first launched in 2021 and has undergone multiple rounds of iteration and upgrades. It is currently deployed on the Origin Wukong series of quantum computers.
+
+The broader context is China’s push into what policymakers describe as “industries of the future.” Quantum technology is among six strategic sectors highlighted in recommendations for the country’s 15th Five-Year Plan covering 2026 to 2030. The list also includes biomanufacturing, hydrogen and nuclear fusion power, brain-computer interfaces, embodied artificial intelligence, and 6G communications.
+
+Guo Guoping, chief scientist of Origin Quantum, called a quantum operating system the “soft heart” of the quantum computing ecosystem. Making Origin Pilot available globally marks a shift from “closed-door tech innovation” toward open-source ecosystem development. The system supports multiple hardware platforms and manages core functions such as task scheduling, hardware-software coordination, parallel execution, and automatic qubit calibration.
+
+The decision to open-source the “soft heart” of China’s quantum stack is a calculated move. By allowing global download, China seeks to establish a de facto standard in quantum software and attract international developers. The underlying OriginQ Wukong hardware, featuring 72 functional qubits and 126 coupler qubits, has already executed over 339,000 quantum jobs for users in 120-plus countries, with American researchers reportedly among the most active users.
+
+Origin Pilot is released in two versions: a Community Edition for free download (focusing on noise mitigation and hybrid compilation) and an Enterprise Edition which includes advanced post-quantum cryptography tools. Neither IBM, Google, nor any other Western quantum company offers their underlying quantum operating system as a downloadable package for local installation. IBM’s Qiskit and Google’s Cirq are primarily accessed via the cloud.
+
+The choice is obvious — not because Origin Pilot is necessarily superior, but because it’s available. And in technology ecosystem dynamics, availability compounds. Every institution that adopts Origin Pilot becomes a node in China’s quantum software ecosystem, generating feedback, bug reports, driver contributions, and, critically, a community of developers fluent in Origin Quantum’s abstractions and architectural assumptions.
+
+This playbook should look familiar. When DeepSeek released its R1 reasoning model as open source in January 2025, the immediate reaction focused on performance benchmarks versus Western competitors. The strategic consequence was different: it catalyzed an ecosystem. Within a year, Chinese open-source AI models had gone from under 2% to nearly 30% of global AI usage. Alibaba’s Qwen models overtook Meta’s Llama in cumulative downloads on Hugging Face.
+
+**March 2026:** The AI landscape moved beyond the “chatbot” era into the “agentic” era. OpenClaw surpassed React to become the most-starred software project in GitHub history, boasting over 335,000 stars. The surge reflected a fundamental shift in developer preference toward local-first, persistent AI agents that run on a user’s own hardware under their own rules.
+
+In direct competition with Western models, Zhipu AI launched GLM-5.1 on March 27, 2026, achieving 94.6% of the score recorded by Anthropic’s Claude Opus 4.6 on coding benchmarks. The architecture involves a 744 billion parameter Mixture-of-Experts system leveraging 40 billion active parameters per token. The broader implication: the model was trained entirely on a self-sufficient Chinese compute stack using Huawei Ascend 910B chips, demonstrating that top-tier AI results are now achievable without access to restricted Western hardware. This signals a decoupling of the global AI supply chain.
+
+MCP crossed 97 million installs in March 2026, cementing its transition from experimental standard to foundational agentic infrastructure. Every major AI provider now ships MCP-compatible tooling.
+
+**April 2026:** DeepSeek released a preview of its V4 model, continuing its open-source approach. The release came more than a year after R1 rocked global tech markets. Similar to DeepSeek’s previous releases, V4 is open-source, allowing developers to download the code, run it locally, and modify it. Huawei confirmed that its latest AI computing cluster, powered by Ascend AI processors, can support DeepSeek’s V4 model.
+
+Stanford’s 2026 AI Index tracked 87 notable model releases from industry in 2025, compared to just seven from all other sources. Models released by industry now make up over 90 percent of notable models, up from just under 50 percent in 2015, and zero in 2003. AI-related GitHub projects rocketed to 5.58 million through 2025 — a roughly fivefold increase since 2020 and a 23.7 percent increase from 2024.
+
+AI investment set a new record with over $581 billion spent in 2025 — more than double the $253 billion spent in 2024.
+
+-----
+
